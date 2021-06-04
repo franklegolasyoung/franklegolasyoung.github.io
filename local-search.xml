@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Test on Tags</title>
+    <link href="/2021/06/04/Tags/"/>
+    <url>/2021/06/04/Tags/</url>
+    
+    <content type="html"><![CDATA[<p>This is a test blog to enrich tags.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>others</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Blog</tag>
+      
+      <tag>Dev</tag>
+      
+      <tag>Tests</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo command not found</title>
     <link href="/2021/06/04/found/"/>
     <url>/2021/06/04/found/</url>
@@ -21,6 +52,18 @@
     <tags>
       
       <tag>Hexo</tag>
+      
+      <tag>Solved</tag>
+      
+      <tag>Issues</tag>
+      
+      <tag>Blog</tag>
+      
+      <tag>Dev</tag>
+      
+      <tag>HTML</tag>
+      
+      <tag>Mac</tag>
       
     </tags>
     
@@ -45,7 +88,13 @@
     
     <tags>
       
+      <tag>Hexo</tag>
+      
       <tag>HelloWorld</tag>
+      
+      <tag>Intro</tag>
+      
+      <tag>Commands</tag>
       
     </tags>
     
