@@ -40,7 +40,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"franklegolasyoung.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":10},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":"ccdba5599f68aab0fb754b58cdcf0e04","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","app_key":"R3IFAcMNDIAG82yVJFwpRN4y","server_url":"https://kltooxzh.lc-cn-n1-shared.com"}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"franklegolasyoung.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":10},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":"ccdba5599f68aab0fb754b58cdcf0e04","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","app_key":"R3IFAcMNDIAG82yVJFwpRN4y","server_url":"https://kltooxzh.lc-cn-n1-shared.com"}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -172,7 +172,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/tags/Blog/" style="font-size: 35px; color: #779bd3">Blog</a> <a href="/tags/Commands/" style="font-size: 30px; color: #bbe">Commands</a> <a href="/tags/Dev/" style="font-size: 35px; color: #779bd3">Dev</a> <a href="/tags/HTML/" style="font-size: 30px; color: #bbe">HTML</a> <a href="/tags/HelloWorld/" style="font-size: 30px; color: #bbe">HelloWorld</a> <a href="/tags/Hexo/" style="font-size: 40px; color: #337ab7">Hexo</a> <a href="/tags/Intro/" style="font-size: 30px; color: #bbe">Intro</a> <a href="/tags/Issues/" style="font-size: 30px; color: #bbe">Issues</a> <a href="/tags/Mac/" style="font-size: 30px; color: #bbe">Mac</a> <a href="/tags/Solved/" style="font-size: 30px; color: #bbe">Solved</a> <a href="/tags/Tests/" style="font-size: 30px; color: #bbe">Tests</a>
+  <a href="/tags/Blog/" style="font-size: 36.67px; color: #6090c9">Blog</a> <a href="/tags/Commands/" style="font-size: 30px; color: #bbe">Commands</a> <a href="/tags/Dev/" style="font-size: 36.67px; color: #6090c9">Dev</a> <a href="/tags/HTML/" style="font-size: 30px; color: #bbe">HTML</a> <a href="/tags/HelloWorld/" style="font-size: 30px; color: #bbe">HelloWorld</a> <a href="/tags/Hexo/" style="font-size: 40px; color: #337ab7">Hexo</a> <a href="/tags/Intro/" style="font-size: 30px; color: #bbe">Intro</a> <a href="/tags/Issues/" style="font-size: 30px; color: #bbe">Issues</a> <a href="/tags/Mac/" style="font-size: 33.33px; color: #8ea5dc">Mac</a> <a href="/tags/Solved/" style="font-size: 30px; color: #bbe">Solved</a> <a href="/tags/Tests/" style="font-size: 30px; color: #bbe">Tests</a>
 </div>
 
               </div>
@@ -226,21 +226,22 @@
 
     
       
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
             总访问量 
-            <span id="busuanzi_value_site_pv"></span>
+            <span id="leancloud-site-pv"></span>
              次
           </span>
       
       
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
             总访客数 
-            <span id="busuanzi_value_site_uv"></span>
+            <span id="leancloud-site-uv"></span>
              人
           </span>
       
+
     
   </div>
 
@@ -297,8 +298,8 @@
 
 
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
+  <script defer src="/js/leancloud.js" ></script>
 
 
 
@@ -322,6 +323,30 @@
 
 
 
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ccdba5599f68aab0fb754b58cdcf0e04";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 

@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/heart.png">
+  <link rel="icon" href="/img/heart.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="">
+  <meta name="author" content="Frank Young">
+  <meta name="keywords" content="">
+  
+  <title>DevOps - zhuocy&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/a11y-light.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"franklegolasyoung.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":10},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":"ccdba5599f68aab0fb754b58cdcf0e04","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","app_key":"R3IFAcMNDIAG82yVJFwpRN4y","server_url":"https://kltooxzh.lc-cn-n1-shared.com"}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zhuocy's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/code.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="DevOps">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      Frank Young
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-05 12:45" pubdate>
+        2021.6.5 下午12:45:02
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">DevOps</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021.6.5 下午1:56:01
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="博客开发步骤"><a href="#博客开发步骤" class="headerlink" title="博客开发步骤"></a>博客开发步骤</h1><h2 id="本地环境搭建"><a href="#本地环境搭建" class="headerlink" title="本地环境搭建"></a>本地环境搭建</h2><p>需要安装Nodejs、npm、Hexo和额外插件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs bash">frankyoung@Franks-MacBook-Pro ~ % mkdir ~/.npm-global<br>frankyoung@Franks-MacBook-Pro ~ % npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&#x27;~/.npm-global&#x27;</span><br>frankyoung@Franks-MacBook-Pro ~ % vim ~/.profile<br>frankyoung@Franks-MacBook-Pro ~ % <span class="hljs-built_in">source</span> ~/.profile<br>frankyoung@Franks-MacBook-Pro ~ % npm install -g jshint<br>/Users/frankyoung/.npm-global/bin/jshint -&gt; /Users/frankyoung/.npm-global/lib/node_modules/jshint/bin/jshint<br>+ jshint@2.12.0<br>added 31 packages from 15 contributors <span class="hljs-keyword">in</span> 4.799s<br><br>frankyoung@Franks-MacBook-Pro ~ % npm install -g hexo-cli <br>/Users/frankyoung/.npm-global/bin/hexo -&gt; /Users/frankyoung/.npm-global/lib/node_modules/hexo-cli/bin/hexo<br>+ hexo-cli@4.2.0<br>added 63 packages from 56 contributors <span class="hljs-keyword">in</span> 5.937s<br><br>frankyoung@Franks-MacBook-Pro blog % hexo init blog<br>INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git<br>INFO  Install dependencies<br>added 187 packages from 159 contributors and audited 193 packages <span class="hljs-keyword">in</span> 7.984s<br>15 packages are looking <span class="hljs-keyword">for</span> funding<br>  run `npm fund` <span class="hljs-keyword">for</span> details<br>found 0 vulnerabilities<br><br>INFO  Start blogging with Hexo!<br></code></pre></td></tr></table></figure>
+
+<h2 id="页面设置"><a href="#页面设置" class="headerlink" title="页面设置"></a>页面设置</h2><p>主要设置内容为：文章首页、文章显示页、导航栏菜单</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#---------------------------</span><br><span class="hljs-comment"># 首页</span><br>index:<br>  <span class="hljs-comment"># 首页 Banner 头图</span><br>  banner_img: /img/star.jpg<br><br>  <span class="hljs-comment"># 头图高度，屏幕百分比</span><br>  <span class="hljs-comment"># Available: 0 - 100</span><br>  banner_img_height: 100<br><br>  <span class="hljs-comment"># 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明</span><br>  <span class="hljs-comment"># Available: 0 - 1.0</span><br>  banner_mask_alpha: 0.3<br><br>  <span class="hljs-comment"># 首页副标题的独立设置</span><br>  slogan:<br>    <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br><br>    <span class="hljs-comment"># 为空则按 hexo config.subtitle 显示</span><br>    <span class="hljs-comment"># If empty, text based on `subtitle` in hexo config</span><br>    text: <span class="hljs-string">&quot;每一个不曾努力的日子都是对生命的辜负&quot;</span><br><br>  <span class="hljs-comment"># 自动截取文章摘要</span><br>  auto_excerpt:<br>    <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br><br>  <span class="hljs-comment"># 是否显示文章信息（时间、分类、标签）</span><br>  post_meta:<br>    date: <span class="hljs-literal">true</span><br>    category: <span class="hljs-literal">true</span><br>    tag: <span class="hljs-literal">true</span><br><br>  <span class="hljs-comment"># 文章通过 sticky 排序后，在首页文章标题前显示图标</span><br>  post_sticky:<br>    <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br>    icon: <span class="hljs-string">&quot;iconfont icon-top&quot;</span><br><span class="hljs-comment">#---------------------------</span><br><br><span class="hljs-comment">#---------------------------</span><br><span class="hljs-comment"># 文章页</span><br>post:<br>  banner_img: /img/code.jpg<br>  banner_img_height: 70<br>  banner_mask_alpha: 0.3<br><br>  <span class="hljs-comment"># 文章标题下方的元信息</span><br>  meta:<br>    <span class="hljs-comment"># 作者</span><br>    author: <br>      <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br><br>    <span class="hljs-comment"># 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期</span><br>    date:<br>      <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br>      <span class="hljs-comment"># 格式参照 ISO-8601 日期格式化</span><br>      <span class="hljs-comment"># ISO-8601 date format</span><br>      <span class="hljs-comment"># See: http://momentjs.cn/docs/#/parsing/string-format/</span><br>      format: <span class="hljs-string">&quot;YYYY.M.D ah:mm:ss&quot;</span><br><br>    <span class="hljs-comment"># 浏览量计数</span><br>    views:<br>      <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br>      <span class="hljs-comment"># 统计数据来源</span><br>      <span class="hljs-built_in">source</span>: <span class="hljs-string">&quot;leancloud&quot;</span><br>      format: <span class="hljs-string">&quot;&#123;&#125; 次&quot;</span><br><br>  <span class="hljs-comment"># 文章右侧目录</span><br>  toc:<br>    <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br>    <span class="hljs-comment"># 目录会选择这些节点作为标题</span><br>    headingSelector: <span class="hljs-string">&quot;h1,h2,h3,h4,h5,h6&quot;</span><br>    <span class="hljs-comment"># 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开</span><br>    collapseDepth: 10<br><br>  <span class="hljs-comment"># 文章底部上一篇下一篇功能</span><br>  prev_next:<br>    <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br><span class="hljs-comment">#---------------------------</span><br><br><span class="hljs-comment">#---------------------------</span><br><span class="hljs-comment"># 导航栏菜单，可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称</span><br>  menu:<br>    - &#123; key: <span class="hljs-string">&quot;home&quot;</span>, link: <span class="hljs-string">&quot;/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-home-fill&quot;</span> &#125;<br>    - &#123; key: <span class="hljs-string">&quot;archive&quot;</span>, link: <span class="hljs-string">&quot;/archives/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-archive-fill&quot;</span> &#125;<br>    - &#123; key: <span class="hljs-string">&quot;category&quot;</span>, link: <span class="hljs-string">&quot;/categories/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-category-fill&quot;</span> &#125;<br>    - &#123; key: <span class="hljs-string">&quot;tag&quot;</span>, link: <span class="hljs-string">&quot;/tags/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-tags-fill&quot;</span> &#125;<br>    - &#123; key: <span class="hljs-string">&quot;about&quot;</span>, link: <span class="hljs-string">&quot;/about/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-user-fill&quot;</span> &#125;<br><span class="hljs-comment">#---------------------------</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="构件编译并发布"><a href="#构件编译并发布" class="headerlink" title="构件编译并发布"></a>构件编译并发布</h2><p>构件编译主要有四步：<br>清除本地缓存、编译本地文件、启动本地网页端口调试、发布到服务器仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><code class="hljs bash">frankyoung@Franks-MacBook-Pro blog % hexo clean<br>INFO  Validating config<br>INFO  Deleted database.<br>INFO  Deleted public folder.<br><br>frankyoung@Franks-MacBook-Pro blog % hexo generate<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Files loaded <span class="hljs-keyword">in</span> 342 ms<br>INFO  Generated: tags/index.html<br>INFO  Generated: local-search.xml<br>INFO  Generated: tags/Solved/index.html<br>INFO  Generated: tags/Issues/index.html<br>INFO  Generated: tags/Blog/index.html<br>INFO  Generated: tags/HTML/index.html<br>INFO  Generated: tags/Tests/index.html<br>INFO  Generated: tags/HelloWorld/index.html<br>INFO  Generated: tags/Intro/index.html<br>INFO  Generated: categories/others/index.html<br>INFO  Generated: categories/issues/index.html<br>INFO  Generated: tags/Dev/index.html<br>INFO  Generated: tags/Mac/index.html<br>INFO  Generated: categories/index.html<br>INFO  Generated: links/index.html<br>INFO  Generated: archives/index.html<br>INFO  Generated: tags/Hexo/index.html<br>INFO  Generated: tags/Commands/index.html<br>INFO  Generated: about/index.html<br>INFO  Generated: index.html<br>INFO  Generated: 404.html<br>INFO  Generated: xml/local-search.xml<br>INFO  Generated: archives/2021/06/index.html<br>INFO  Generated: archives/2021/05/index.html<br>INFO  Generated: archives/2021/index.html<br>INFO  Generated: css/gitalk.css<br>INFO  Generated: js/boot.js<br>INFO  Generated: js/events.js<br>INFO  Generated: js/local-search.js<br>INFO  Generated: js/plugins.js<br>INFO  Generated: js/leancloud.js<br>INFO  Generated: js/utils.js<br>INFO  Generated: js/img-lazyload.js<br>INFO  Generated: js/color-schema.js<br>INFO  Generated: lib/hint/hint.min.css<br>INFO  Generated: 2021/06/04/Tags/index.html<br>INFO  Generated: css/main.css<br>INFO  Generated: 2021/05/21/hello-world/index.html<br>INFO  Generated: 2021/06/04/found/index.html<br>INFO  65 files generated <span class="hljs-keyword">in</span> 650 ms<br><br>frankyoung@Franks-MacBook-Pro blog % hexo server<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.<br>^C<br>INFO  Bye!<br><br>frankyoung@Franks-MacBook-Pro blog % hexo deploy<br>INFO  Validating config<br>INFO  Deploying: git<br>INFO  Clearing .deploy_git folder...<br>INFO  Copying files from public folder...<br>INFO  Copying files from extend <span class="hljs-built_in">dirs</span>...<br>[master 93b2ef5] Site updated: 2021-06-04 21:04:25<br> 29 files changed, 3935 insertions(+), 45 deletions(-)<br> create mode 100644 2021/06/04/Tags/index.html<br> delete mode 100644 img/hit.jpg<br> create mode 100644 img/hit.png<br> create mode 100644 tags/Blog/index.html<br> create mode 100644 tags/Commands/index.html<br> create mode 100644 tags/Dev/index.html<br> create mode 100644 tags/HTML/index.html<br> create mode 100644 tags/Intro/index.html<br> create mode 100644 tags/Issues/index.html<br> create mode 100644 tags/Mac/index.html<br> create mode 100644 tags/Solved/index.html<br> create mode 100644 tags/Tests/index.html<br>Enumerating objects: 94, <span class="hljs-keyword">done</span>.<br>Counting objects: 100% (94/94), <span class="hljs-keyword">done</span>.<br>Delta compression using up to 4 threads<br>Compressing objects: 100% (36/36), <span class="hljs-keyword">done</span>.<br>Writing objects: 100% (59/59), 661.63 KiB | 18.38 MiB/s, <span class="hljs-keyword">done</span>.<br>Total 59 (delta 27), reused 0 (delta 0)<br>remote: Resolving deltas: 100% (27/27), completed with 15 <span class="hljs-built_in">local</span> objects.<br>To https://github.com/franklegolasyoung/franklegolasyoung.github.io.git<br>   1b0b760..93b2ef5  HEAD -&gt; gh-pages<br>Branch <span class="hljs-string">&#x27;master&#x27;</span> <span class="hljs-built_in">set</span> up to track remote branch <span class="hljs-string">&#x27;gh-pages&#x27;</span> from <span class="hljs-string">&#x27;https://github.com/franklegolasyoung/franklegolasyoung.github.io.git&#x27;</span>.<br>INFO  Deploy <span class="hljs-keyword">done</span>: git<br></code></pre></td></tr></table></figure>
+<h2 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a>评论功能</h2><p>需注册LeanCloud账号并创建仓库，获得AppID和AppKey。<br>部署Valine插件。<br>测试评论功能。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 评论插件</span><br>  <span class="hljs-attr">comments:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">type:</span> <span class="hljs-string">valine</span><br><br><span class="hljs-comment"># Valine</span><br><span class="hljs-comment"># 基于 LeanCloud</span><br><span class="hljs-comment"># See: https://valine.js.org/</span><br><span class="hljs-attr">valine:</span><br>  <span class="hljs-attr">appId:</span> <span class="hljs-string">klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz</span><br>  <span class="hljs-attr">appKey:</span> <span class="hljs-string">R3IFAcMNDIAG82yVJFwpRN4y</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">window.location.pathname</span><br>  <span class="hljs-attr">avatar:</span> <span class="hljs-string">retro</span><br>  <span class="hljs-attr">meta:</span> [<span class="hljs-string">&#x27;nick&#x27;</span>, <span class="hljs-string">&#x27;mail&#x27;</span>, <span class="hljs-string">&#x27;link&#x27;</span>]<br>  <span class="hljs-attr">pageSize:</span> <span class="hljs-number">10</span><br>  <span class="hljs-attr">lang:</span> <span class="hljs-string">zh-CN</span><br>  <span class="hljs-attr">highlight:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">recordIP:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">serverURLs:</span> <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attr">emojiCDN:</span><br>  <span class="hljs-attr">emojiMaps:</span><br>  <span class="hljs-attr">enableQQ:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">requiredFields:</span> []<br></code></pre></td></tr></table></figure>
+
+<h2 id="浏览量和访客量"><a href="#浏览量和访客量" class="headerlink" title="浏览量和访客量"></a>浏览量和访客量</h2><p>注册百度统计账号。<br>绑定博客网页并安装统计代码。<br>测试是否成功并添加运行。<br>显示实时数据。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-comment"># 网页访问统计</span><br><span class="hljs-attribute">web_analytics</span>:<br>  <span class="hljs-attribute">enable</span>: true<br><br>  <span class="hljs-comment"># 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串</span><br>  <span class="hljs-comment"># See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376</span><br>  <span class="hljs-attribute">baidu</span>: ccdba<span class="hljs-number">5599</span>f<span class="hljs-number">68</span>aab<span class="hljs-number">0</span>fb<span class="hljs-number">754</span>b<span class="hljs-number">58</span>cdcf<span class="hljs-number">0</span>e<span class="hljs-number">04</span><br><br>  <span class="hljs-comment"># LeanCloud 计数统计，可用于 PV UV 展示</span><br>  <span class="hljs-attribute">leancloud</span>: <br>    <span class="hljs-attribute">app_id</span>: klTOoxzHLpBGSqgQ<span class="hljs-number">2</span>z<span class="hljs-number">9</span>NgQkK-gzGzoHsz<br>    <span class="hljs-attribute">app_key</span>: R<span class="hljs-number">3</span>IFAcMNDIAG<span class="hljs-number">82</span>yVJFwpRN<span class="hljs-number">4</span>y<br>    <span class="hljs-comment"># REST API 服务器地址</span><br>    <span class="hljs-attribute">server_url</span>: https://kltooxzh.lc-cn-n<span class="hljs-number">1</span>-shared.com<br></code></pre></td></tr></table></figure>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Dev/">Dev</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Dev/">Dev</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Blog/">Blog</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Mac/">Mac</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/04/Tags/">
+                        <span class="hidden-mobile">Test on Tags</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","appKey":"R3IFAcMNDIAG82yVJFwpRN4y","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <img src="/img/github.png" srcset="/img/loading.gif" lazyload alt="Github" width="17" height="17"> <a href="https://github.com/franklegolasyoung" target="_blank" rel="nofollow noopener"><span>Frank Young</span></a> <img src="/img/hit.png" srcset="/img/loading.gif" lazyload alt="HIT" width="20" height="20"> <a href="http://www.hit.edu.cn/" target="_blank" rel="nofollow noopener"><span>Harbin Institute of Technology</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ccdba5599f68aab0fb754b58cdcf0e04";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

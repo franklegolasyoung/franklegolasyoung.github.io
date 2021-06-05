@@ -40,7 +40,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"franklegolasyoung.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":10},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":"ccdba5599f68aab0fb754b58cdcf0e04","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","app_key":"R3IFAcMNDIAG82yVJFwpRN4y","server_url":"https://kltooxzh.lc-cn-n1-shared.com"}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"franklegolasyoung.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":10},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":"ccdba5599f68aab0fb754b58cdcf0e04","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"klTOoxzHLpBGSqgQ2z9NgQkK-gzGzoHsz","app_key":"R3IFAcMNDIAG82yVJFwpRN4y","server_url":"https://kltooxzh.lc-cn-n1-shared.com"}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -180,6 +180,69 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/06/05/DevOps/" target="_self">
+          <img src="/img/code.jpg" srcset="/img/loading.gif" lazyload alt="DevOps">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/06/05/DevOps/" target="_self">
+          DevOps
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/06/05/DevOps/" target="_self">
+          
+          
+            
+          
+          博客开发步骤本地环境搭建需要安装Nodejs、npm、Hexo和额外插件。
+1234567891011121314151617181920212223frankyoung@Franks-MacBook-Pro ~ % mkdir ~/.npm-globalfrankyoung@Franks-MacBook-Pro ~ % npm config set prefix &#x27;~/.npm-glo
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-06-05 12:45" pubdate>
+              2021-06-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Dev/">Dev</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Hexo/">Hexo</a>
+            
+              <a href="/tags/Dev/">Dev</a>
+            
+              <a href="/tags/Blog/">Blog</a>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/06/04/Tags/" target="_self">
           <img src="/img/code.jpg" srcset="/img/loading.gif" lazyload alt="Test on Tags">
         </a>
@@ -227,11 +290,11 @@
             
               <a href="/tags/Hexo/">Hexo</a>
             
-              <a href="/tags/Blog/">Blog</a>
-            
               <a href="/tags/Dev/">Dev</a>
             
               <a href="/tags/Tests/">Tests</a>
+            
+              <a href="/tags/Blog/">Blog</a>
             
           </div>
         
@@ -290,13 +353,13 @@
             
               <a href="/tags/Hexo/">Hexo</a>
             
-              <a href="/tags/Solved/">Solved</a>
-            
-              <a href="/tags/Issues/">Issues</a>
+              <a href="/tags/Dev/">Dev</a>
             
               <a href="/tags/Blog/">Blog</a>
             
-              <a href="/tags/Dev/">Dev</a>
+              <a href="/tags/Solved/">Solved</a>
+            
+              <a href="/tags/Issues/">Issues</a>
             
               <a href="/tags/HTML/">HTML</a>
             
@@ -426,21 +489,22 @@ Quick
 
     
       
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
             总访问量 
-            <span id="busuanzi_value_site_pv"></span>
+            <span id="leancloud-site-pv"></span>
              次
           </span>
       
       
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
             总访客数 
-            <span id="busuanzi_value_site_uv"></span>
+            <span id="leancloud-site-uv"></span>
              人
           </span>
       
+
     
   </div>
 
@@ -497,8 +561,8 @@ Quick
 
 
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
+  <script defer src="/js/leancloud.js" ></script>
 
 
 
@@ -522,6 +586,30 @@ Quick
 
 
 
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ccdba5599f68aab0fb754b58cdcf0e04";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
