@@ -59,8 +59,8 @@ education:
 work:
   - position: Cyber Security Research Engineer
     company_name: ST Engineering
-    company_url: ''
-    company_logo: 'https://www.stengg.com/media/54zcscoz/st-engineering.png?width=800&amp;height=500&amp;rnd=133160569818630000'
+    company_url: 'https://www.stengg.com/'
+    company_logo: 'https://www.stengg.com/media/54zcscoz/st-engineering.png'
     date_start: 2024-01-21
     date_end: ''
   #   summary: |2-
@@ -154,4 +154,4 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently working as a Cyber Security Research Engineer in ST Engineering where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
