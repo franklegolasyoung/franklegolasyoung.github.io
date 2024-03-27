@@ -38,8 +38,8 @@ profiles:
 education:
   - area: M.Sc Artificial Intelligence
     institution: Nanyang Technological University
-    date_start: 2022-08
-    date_end: 2024-01
+    date_start: 2022-08-07
+    date_end: 2024-01-31
     # summary: |
     #   MSAI
     # button:
@@ -47,8 +47,8 @@ education:
     #   url: 'https://example.com'
   - area: B.Eng Computer Science and Technology
     institution: Harbin Institute of Technology
-    date_start: 2018-09
-    date_end: 2022-06
+    date_start: 2018-09-01
+    date_end: 2022-06-01
     # summary: |
     #   GPA: 3.8/4.0
 
