@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: YANG ZHUOCHEN
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: ZHUOCHEN
+last_name: YANG
 
 # Status emoji
 status:
@@ -17,12 +17,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Cyber Security Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: ST Engineering
+    url: https://www.stengg.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -30,20 +30,16 @@ profiles:
   - icon: at-symbol
     url: 'mailto:your-email@example.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/franklegolasyoung
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.linkedin.com/in/zhuochen-y
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Master of Science Artificial Intelligence
+    institution: Nanyang Technological University
+    date_start: 2022-08
+    date_end: 2024-01
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
