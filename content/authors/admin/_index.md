@@ -57,7 +57,7 @@ education:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Research Engineer in GTO, CSSTC
+  - position: Cyber Security Research Engineer
     company_name: ST Engineering
     company_url: ''
     company_logo: ''
