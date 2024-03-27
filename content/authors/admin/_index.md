@@ -61,7 +61,7 @@ work:
     company_name: ST Engineering
     company_url: ''
     company_logo: ''
-    date_start: 2024-01
+    date_start: 2024-01-21
     date_end: ''
   #   summary: |2-
   #     Responsibilities include:
