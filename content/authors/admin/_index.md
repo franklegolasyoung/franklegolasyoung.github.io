@@ -37,6 +37,11 @@ profiles:
     url: https://www.linkedin.com/in/zhuochen-y
     label: LinkedIn Profile
 
+content:
+  coordinates:
+    latitude: '37.4275'
+    longitude: '-122.1697'
+
 education:
   - area: M.Sc Artificial Intelligence
     institution: Nanyang Technological University
@@ -164,22 +169,20 @@ awards:
     # summary: |
     #   Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
   - title: 'Academic Scholarship'
-    url: https://www.coursera.org
+    url: https://www.hit.edu.cn
     date: '2020-06-28'
     awarder: Harbin Institute of Technology
-    icon: coursera
+    icon: hit
   - title: 'Community Work Scholarship'
-    url: https://www.coursera.org
-    # certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    url: https://www.hit.edu.cn
     date: '2019-10-28'
     awarder: Harbin Institute of Technology
-    icon: coursera
+    icon: hit
   - title: 'Individual Scholarship'
-    url: https://www.coursera.org
-    # certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    url: https://www.hit.edu.cn
     date: '2019-06-28'
     awarder: Harbin Institute of Technology
-    icon: coursera
+    icon: hit
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
