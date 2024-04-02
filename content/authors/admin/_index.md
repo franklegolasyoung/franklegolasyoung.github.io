@@ -87,7 +87,7 @@ work:
   - position: Software Engineer
     company_name: IcePhone Lab
     company_url: ''
-    company_logo: 'hit.png'
+    company_logo: hit
     date_start: 2019-03-01
     date_end: 2022-04-30
 
@@ -123,7 +123,7 @@ skills:
       - name: Keyboard
         description: ''
         percent: 80
-        icon: keyboard.png
+        icon: keyboard
 
 languages:
   - name: English
