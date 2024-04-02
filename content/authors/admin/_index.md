@@ -138,14 +138,12 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, h
+  - title: 'Mathematics for Machine Learning: Multivariate Calculus'
+    url: https://www.coursera.org
+    certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    date: '2021-08-21'
+    awarder: Coursera
+    icon: coursera
   # - title: Mathematics for Machine Learning: Multivariate Calculus
   #   url: https://www.coursera.org
   #   date: '2021-08-21'
