@@ -65,7 +65,7 @@ work:
   - position: Cyber Security Research Engineer
     company_name: ST Engineering
     company_url: 'https://www.stengg.com/'
-    company_logo: 'st-engineering.png'
+    company_logo: st-engineering.png
     date_start: 2024-01-21
     date_end: ''
   #   summary: |2-
@@ -87,7 +87,7 @@ work:
   - position: Software Engineer
     company_name: IcePhone Lab
     company_url: ''
-    company_logo: hit
+    company_logo: hit.png
     date_start: 2019-03-01
     date_end: 2022-04-30
 
