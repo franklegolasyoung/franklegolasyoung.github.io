@@ -1,13 +1,13 @@
 ---
 # Display name
-title: YANG ZHUOCHEN
+title: Frank Young
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: ZHUOCHEN
-last_name: YANG
+first_name: Frank
+last_name: Young
 
 # Status emoji
 status:
@@ -34,7 +34,7 @@ profiles:
     url: https://github.com/franklegolasyoung
     label: Github
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/zhuochen-y
+    url: 
     label: LinkedIn Profile
 
 education:
@@ -51,16 +51,7 @@ education:
     institution: Harbin Institute of Technology
     date_start: 2018-09-01
     date_end: 2022-06-01
-  - area: Certificate in Computer and Information
-    institution: University of Washington
-    date_start: 2021-01-04
-    date_end: 2021-03-21
-    # summary: |
-    #   GPA: 3.8/4.0
-    #   Courses included:
-    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 work:
   - position: Cyber Security Research Engineer
     company_name: ST Engineering
@@ -68,28 +59,6 @@ work:
     company_logo: st-engineering.png
     date_start: 2024-01-21
     date_end: ''
-  #   summary: |2-
-  #     Responsibilities include:
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Algorithm Engineer
-    company_name: CRAZIA
-    company_url: ''
-    company_logo: ''
-    date_start: 2023-05-01
-    date_end: 2023-08-31
-  #   summary: |
-  #     Responsibilities include:
-  #     - Migrated infrastructure to a new data center
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Software Engineer
-    company_name: IcePhone Lab
-    company_url: ''
-    company_logo: custom/hit
-    date_start: 2019-03-01
-    date_end: 2022-04-30
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -163,21 +132,21 @@ awards:
     icon: coursera
     # summary: |
     #   Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
-  - title: 'Academic Scholarship'
-    url: https://www.hit.edu.cn
-    date: '2020-06-28'
-    awarder: Harbin Institute of Technology
-    icon: /assets/media/icons/custom/hit.png
-  - title: 'Community Work Scholarship'
-    url: https://www.hit.edu.cn
-    date: '2019-10-28'
-    awarder: Harbin Institute of Technology
-    icon: custom/school
-  - title: 'Individual Scholarship'
-    url: https://www.hit.edu.cn
-    date: '2019-06-28'
-    awarder: Harbin Institute of Technology
-    icon: custom/school
+  # - title: 'Academic Scholarship'
+  #   url: https://www.hit.edu.cn
+  #   date: '2020-06-28'
+  #   awarder: Harbin Institute of Technology
+  #   icon: /assets/media/icons/custom/hit.png
+  # - title: 'Community Work Scholarship'
+  #   url: https://www.hit.edu.cn
+  #   date: '2019-10-28'
+  #   awarder: Harbin Institute of Technology
+  #   icon: custom/school
+  # - title: 'Individual Scholarship'
+  #   url: https://www.hit.edu.cn
+  #   date: '2019-06-28'
+  #   awarder: Harbin Institute of Technology
+  #   icon: custom/school
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
