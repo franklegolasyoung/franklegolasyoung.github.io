@@ -19,8 +19,8 @@ sections:
       #   text: Download Résumé
       #   url: uploads/resume.pdf
     design:
-      banner:
-        # Upload your cover image to the `assets/media/` folder and reference it here
+      banner:m
+        # Upload your cover image to the `assets/edia/` folder and reference it here
         filename: christoffer-engstrom-wc9avd2RaN0-unsplash.jpg
       biography:
         # Customize the style of your biography text
