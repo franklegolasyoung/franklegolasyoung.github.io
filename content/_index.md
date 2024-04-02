@@ -15,9 +15,15 @@ sections:
     content:
       username: admin
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download Résumé
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download Résumé
+      #   url: uploads/resume.pdf
+    design:
+      background:
+        # Choose a color such as from https://html-color-codes.info
+        color: 'navy'
+        # Text color (true=light, false=dark, or remove for the dynamic theme color).
+        text_color_light: true
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
