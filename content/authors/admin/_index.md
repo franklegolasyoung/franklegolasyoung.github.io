@@ -123,7 +123,7 @@ skills:
       - name: Keyboard
         description: ''
         percent: 80
-        icon: keyboard
+        icon: tabler/keyboard
 
 languages:
   - name: English
