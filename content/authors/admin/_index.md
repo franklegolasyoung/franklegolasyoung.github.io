@@ -124,7 +124,7 @@ skills:
       - name: Keyboard
         description: ''
         percent: 80
-        icon: keyboard
+        icon: dog
 
 languages:
   - name: English
