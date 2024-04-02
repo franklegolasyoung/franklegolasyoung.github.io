@@ -123,7 +123,7 @@ skills:
       - name: Keyboard
         description: ''
         percent: 80
-        icon: custom/keyboard-regular
+        icon: custom/keyboard
 
 languages:
   - name: English
@@ -167,17 +167,17 @@ awards:
     url: https://www.hit.edu.cn
     date: '2020-06-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    icon: custom/hit
   - title: 'Community Work Scholarship'
     url: https://www.hit.edu.cn
     date: '2019-10-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    icon: custom/hit
   - title: 'Individual Scholarship'
     url: https://www.hit.edu.cn
     date: '2019-06-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    icon: custom/hit
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
