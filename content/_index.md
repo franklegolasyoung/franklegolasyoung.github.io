@@ -13,9 +13,6 @@ design:
 sections:
   - block: biography
     content:
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
       username: admin
       # Show a call-to-action button under your biography? (optional)
       # button:

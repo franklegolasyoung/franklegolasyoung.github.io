@@ -54,7 +54,3 @@ features:
     enable: false
   privacy_pack:
     enable: false
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
