@@ -144,25 +144,25 @@ awards:
     date: '2021-08-21'
     awarder: Coursera
     icon: coursera
-    # summary: |
-    #   I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+    summary: |
+      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
   - title: Text Retrieval and Search Engines
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/WHEMT55F86F8
     date: '2021-08-31'
     awarder: Coursera
     icon: coursera
-    # summary: |
-    #   Learned:
-    #   - Synthesize your own blockchain solutions
-    #   - Gain an in-depth understanding of the specific mechanics of Bitcoin
-    #   - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, E![alt text](photo_2024-03-27_15-10-30.jpg)thereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+    summary: |
+      Learned:
+      - Synthesize your own blockchain solutions
+      - Gain an in-depth understanding of the specific mechanics of Bitcoin
+      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, E![alt text](photo_2024-03-27_15-10-30.jpg)thereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
   - title: Divide and Conquer, Sorting and Searching, and Randomized Algorithms
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/7TFPL9T6B4XF
     date: '2021-08-01'
     awarder: Coursera
     icon: coursera
-    # summary: |
-    #   Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+    summary: |
+      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
