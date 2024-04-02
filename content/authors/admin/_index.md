@@ -37,11 +37,6 @@ profiles:
     url: https://www.linkedin.com/in/zhuochen-y
     label: LinkedIn Profile
 
-content:
-  coordinates:
-    latitude: '37.4275'
-    longitude: '-122.1697'
-
 education:
   - area: M.Sc Artificial Intelligence
     institution: Nanyang Technological University
