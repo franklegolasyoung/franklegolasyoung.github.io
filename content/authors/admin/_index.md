@@ -167,17 +167,17 @@ awards:
     url: https://www.hit.edu.cn
     date: '2020-06-28'
     awarder: Harbin Institute of Technology
-    icon: custom/school
+    # icon: custom/school
   - title: 'Community Work Scholarship'
     url: https://www.hit.edu.cn
     date: '2019-10-28'
     awarder: Harbin Institute of Technology
-    icon: custom/school
+    # icon: custom/school
   - title: 'Individual Scholarship'
     url: https://www.hit.edu.cn
     date: '2019-06-28'
     awarder: Harbin Institute of Technology
-    icon: custom/school
+    # icon: custom/school
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
