@@ -123,7 +123,7 @@ skills:
       - name: Keyboard
         description: ''
         percent: 80
-        icon: custom/keyboard
+        icon: custom/keyboard-regular
 
 languages:
   - name: English
