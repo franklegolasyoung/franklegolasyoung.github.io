@@ -19,15 +19,9 @@ sections:
       #   text: Download Résumé
       #   url: uploads/resume.pdf
     design:
-      background:
-        # Choose a color such as from https://html-color-codes.info
-        color: 'navy'
-        # Text color (true=light, false=dark, or remove for the dynamic theme color).
-        text_color_light: true
-    design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
-        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
+        filename: christoffer-engstrom-wc9avd2RaN0-unsplash.jpg
       biography:
         # Customize the style of your biography text
         style: 'text-align: justify; font-size: 0.8em;'
