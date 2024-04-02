@@ -167,7 +167,7 @@ awards:
     url: https://www.hit.edu.cn
     date: '2020-06-28'
     awarder: Harbin Institute of Technology
-    icon: icon
+    icon: icon.png
   - title: 'Community Work Scholarship'
     url: https://www.hit.edu.cn
     date: '2019-10-28'
