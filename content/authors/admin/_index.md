@@ -57,7 +57,6 @@ education:
     date_end: 2021-03-21
     # summary: |
     #   GPA: 3.8/4.0
-
     #   Courses included:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -140,7 +139,7 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: Mathematics for Machine Learning: Multivariate Calculus
-    url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
     date: '2021-08-21'
     awarder: Coursera
@@ -148,7 +147,7 @@ awards:
     # summary: |
     #   I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
   - title: Text Retrieval and Search Engines
-    url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/WHEMT55F86F8
     date: '2021-08-31'
     awarder: Coursera
@@ -159,7 +158,7 @@ awards:
     #   - Gain an in-depth understanding of the specific mechanics of Bitcoin
     #   - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, E![alt text](photo_2024-03-27_15-10-30.jpg)thereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
   - title: Divide and Conquer, Sorting and Searching, and Randomized Algorithms
-    url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
+    url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/7TFPL9T6B4XF
     date: '2021-08-01'
     awarder: Coursera
