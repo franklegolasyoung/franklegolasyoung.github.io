@@ -180,7 +180,6 @@ awards:
     date: '2019-06-28'
     awarder: Harbin Institute of Technology
     icon: coursera
-
 ---
 
 I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
