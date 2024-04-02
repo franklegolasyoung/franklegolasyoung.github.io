@@ -167,19 +167,19 @@ awards:
     # url: https://www.coursera.org
     date: '2020-06-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    # icon: coursera
   - title: 'Community Work Scholarship'
     # url: https://www.coursera.org
     # certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
     date: '2019-10-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    # icon: coursera
   - title: 'Individual Scholarship'
     # url: https://www.coursera.org
     # certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
     date: '2019-06-28'
     awarder: Harbin Institute of Technology
-    icon: hit
+    # icon: coursera
 
 ---
 
