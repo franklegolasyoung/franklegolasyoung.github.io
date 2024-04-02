@@ -66,7 +66,7 @@ work:
   - position: Cyber Security Research Engineer
     company_name: ST Engineering
     company_url: 'https://www.stengg.com/'
-    company_logo: 'st-engineering.png'
+    # company_logo: 'st-engineering.png'
     date_start: 2024-01-21
     date_end: ''
   #   summary: |2-
