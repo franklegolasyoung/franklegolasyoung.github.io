@@ -113,18 +113,24 @@ awards:
     certificate_url: https://www.semanticscholar.org/paper/CoSPED%3A-Consistent-Soft-Prompt-Targeted-Data-and-Yang-Wai/fb09eaceb17a4813fd8ce3496d01e1c78c6cec06#extracted
     date: '2025-11-11'
     awarder: AAAI-26 Special Track on AI Alignment
-    icon: coursera
-  - title: 'CoSPED: Consistent Soft Prompt Targeted Data Extraction and Defense'
+    icon: custom/aaai
+  - title: 'Oracle AI Vector Search Certified Professional'
+    url: https://www.oracle.com
+    certificate_url: https://catalog-education.oracle.com/pls/certview/sharebadge?id=EF25409D35DD5E48ABF1F098C07280E80FC1E498303C094DBE5F01FCFA29CD6F
+    date: '2025-05-08'
+    awarder: Oracle
+    icon: custom/oracle
+  - title: 'Mathematics for Machine Learning: Multivariate Calculus'
     url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
     date: '2021-08-28'
-    awarder: Coursera Imperial College London
+    awarder: Imperial College London
     icon: coursera
   - title: 'Text Retrieval and Search Engines'
     url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/WHEMT55F86F8
     date: '2021-08-21'
-    awarder: Coursera University of Illinois
+    awarder: University of Illinois
     icon: coursera
     # summary: |
     #   Learned:
@@ -135,7 +141,7 @@ awards:
     url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/7TFPL9T6B4XF
     date: '2021-08-28'
-    awarder: Coursera Stanford University
+    awarder: Stanford University
     icon: coursera
     # summary: |
     #   Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
