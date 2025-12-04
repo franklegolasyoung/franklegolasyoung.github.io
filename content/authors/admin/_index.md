@@ -36,17 +36,22 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.cn/incareer/in/yangzhuochen
     label: LinkedIn Profile
-  - icon: hero/briefcase
-    url: https://franklegolasyoung.github.io/portfolio
-    label: Portfolio
+  # - icon: hero/briefcase
+  #   url: https://franklegolasyoung.github.io/portfolio
+  #   label: Portfolio
 
 education:
   - area: M.Sc Artificial Intelligence
     institution: Nanyang Technological University
     date_start: 2022-08-07
     date_end: 2024-01-31
-    # summary: |
-    #   MSAI
+    summary: |
+      Specialized in AI security and machine learning.
+
+      Key areas of study:
+      - Large Language Model
+      - Deep learning and neural network architectures
+      - Natural language processing and computer vision
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -54,6 +59,13 @@ education:
     institution: Harbin Institute of Technology
     date_start: 2018-09-01
     date_end: 2022-06-01
+    summary: |
+      Foundation in computer science and software engineering.
+
+      Key courses included:
+      - Data structures and algorithms
+      - Operating systems and computer networks
+      - Database systems and software engineering
 
 work:
   - position: Cyber Security R&D Engineer
@@ -62,6 +74,9 @@ work:
     company_logo: st-engineering.png
     date_start: 2024-01-21
     date_end: ''
+    summary: |
+      Responsibilities include:
+      - Research and development in Large Language Model (LLM) security and safety
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
