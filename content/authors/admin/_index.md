@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Frank Young
+title: Zhuochen Yang
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Frank
-last_name: Young
+first_name: Zhuochen
+last_name: Yang
 
 # Status emoji
 status:
@@ -34,7 +34,7 @@ profiles:
     url: https://github.com/franklegolasyoung
     label: Github
   - icon: brands/linkedin
-    url: 
+    url: https://www.linkedin.cn/incareer/in/yangzhuochen
     label: LinkedIn Profile
 
 education:
@@ -53,7 +53,7 @@ education:
     date_end: 2022-06-01
 
 work:
-  - position: Cyber Security Research Engineer
+  - position: Cyber Security R&D Engineer
     company_name: ST Engineering
     company_url: 'https://www.stengg.com/'
     company_logo: st-engineering.png
@@ -67,16 +67,17 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: 100
         icon: devicon/python
+      - name: Java
+        description: ''
+        percent: 80
+        icon: devicon/java
       - name: C++
         description: ''
-        percent: 100
+        percent: 70
         icon: devicon/cplusplus
-      - name: PyTorch
-        description: ''
-        percent: 60
-        icon: devicon/pytorch
+
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -89,25 +90,31 @@ skills:
         description: ''
         percent: 100
         icon: cat
-      - name: Keyboard
+      - name: Photographer
         description: ''
         percent: 80
-        icon: custom/keyboard-regular
-
+        icon: hero/camera
+      
 languages:
   - name: English
     percent: 85
   - name: Chinese
     percent: 100
   - name: Spanish
-    percent: 10
+    percent: 20
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: 'Mathematics for Machine Learning: Multivariate Calculus'
+  - title: 'CoSPED: Consistent Soft Prompt Targeted Data Extraction and Defense'
+    url: https://aaai.org/
+    certificate_url: https://www.semanticscholar.org/paper/CoSPED%3A-Consistent-Soft-Prompt-Targeted-Data-and-Yang-Wai/fb09eaceb17a4813fd8ce3496d01e1c78c6cec06#extracted
+    date: '2025-11-11'
+    awarder: AAAI-26 Special Track on AI Alignment
+    icon: coursera
+  - title: 'CoSPED: Consistent Soft Prompt Targeted Data Extraction and Defense'
     url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
     date: '2021-08-28'
@@ -149,4 +156,4 @@ awards:
   #   icon: custom/school
 ---
 
-I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research project in Generative AI, especially Large Language Model's security issue.
+I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research and development in Generative AI, especially in Large Language Model's security.
