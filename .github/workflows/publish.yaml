@@ -1,7 +1,7 @@
 name: Deploy website to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.148.2'
+  WC_HUGO_VERSION: '0.123.7'
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -36,13 +36,6 @@ jobs:
       with:
         hugo-version: ${{ env.WC_HUGO_VERSION }}
         extended: true
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm ci
     - uses: actions/cache@v4
       with:
         path: /tmp/hugo_cache_runner/
