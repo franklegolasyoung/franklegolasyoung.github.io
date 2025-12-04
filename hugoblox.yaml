@@ -1,2 +1,5 @@
 build:
-  hugo_version: '0.123.7'
+  hugo_version: '0.152.2'
+template:
+  id: "resume"
+  name: "Resume"

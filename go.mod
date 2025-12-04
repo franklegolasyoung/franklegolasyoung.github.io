@@ -1,8 +1,8 @@
-module github.com/HugoBlox/hugo-blox-builder/starters/blog
+module github.com/HugoBlox/hugo-blox-builder/templates/resume
 
 go 1.19
 
 require (
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20240310162319-c03355fea540
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240310162319-c03355fea540
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v0.0.0-20251201030931-373eb7966ed8
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.0.0-20251201054050-e0a99de6dad0
 )
