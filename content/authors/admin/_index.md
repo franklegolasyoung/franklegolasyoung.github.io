@@ -36,9 +36,9 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.cn/incareer/in/yangzhuochen
     label: LinkedIn Profile
-  # - icon: hero/briefcase
-  #   url: https://franklegolasyoung.github.io/portfolio
-  #   label: Portfolio
+  - icon: hero/briefcase
+    url: https://medium.com/@frank1045325433
+    label: Medium
 
 education:
   - area: M.Sc Artificial Intelligence
@@ -180,4 +180,4 @@ awards:
   #   icon: custom/school
 ---
 
-I am currently working as a Cyber Security Research Engineer in ST Engineering, where I am doing research and development in Generative AI, especially in Large Language Model's security.
+I’m a Singapore PR and working as Cyber Security Research Engineer at ST Engineering, Singapore, focusing on Generative AI and Large Language Model security and development. I’m very passionate about technology! In my spare time, I enjoy building my own software projects, experimenting with new frameworks, and keeping up with the latest AI advancements.
