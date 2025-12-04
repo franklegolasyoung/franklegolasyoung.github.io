@@ -113,13 +113,13 @@ awards:
     certificate_url: https://www.semanticscholar.org/paper/CoSPED%3A-Consistent-Soft-Prompt-Targeted-Data-and-Yang-Wai/fb09eaceb17a4813fd8ce3496d01e1c78c6cec06
     date: '2025-11-11'
     awarder: AAAI-26 Special Track on AI Alignment
-    icon: aaai
+    icon: brands/aaai
   - title: 'Oracle AI Vector Search Certified Professional'
     url: https://www.oracle.com
     certificate_url: https://catalog-education.oracle.com/pls/certview/sharebadge?id=EF25409D35DD5E48ABF1F098C07280E80FC1E498303C094DBE5F01FCFA29CD6F
     date: '2025-05-08'
     awarder: Oracle
-    icon: oracle
+    icon: brands/oracle
   - title: 'Mathematics for Machine Learning: Multivariate Calculus'
     url: https://www.coursera.org
     certificate_url: https://www.coursera.org/account/accomplishments/certificate/757QB5UZ68JQ
