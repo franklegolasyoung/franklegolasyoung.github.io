@@ -40,8 +40,9 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - name: Install TailwindCSS
-      run: npm install -D tailwindcss @tailwindcss/typography
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm ci
     - uses: actions/cache@v4
       with:
         path: /tmp/hugo_cache_runner/
