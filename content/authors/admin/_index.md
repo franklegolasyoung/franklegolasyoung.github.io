@@ -78,7 +78,7 @@ work:
       Responsibilities include:
       - Research and development in Large Language Model (LLM) security and safety
       - Led research projects on LLM security and AI-generated text detection
-      - Published first-author paper *CoSPED: Consistent Soft-Prompt Targeted Data Extraction & Defense* at AAAI-26 AI Alignment Track
+      - Published first-author paper [*CoSPED: Consistent Soft-Prompt Targeted Data Extraction & Defense*](https://www.semanticscholar.org/paper/CoSPED%3A-Consistent-Soft-Prompt-Targeted-Data-and-Yang-Wai/fb09eaceb17a4813fd8ce3496d01e1c78c6cec06) at AAAI-26 AI Alignment Track
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
