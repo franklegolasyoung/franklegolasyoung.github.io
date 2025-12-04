@@ -13,15 +13,15 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Zhuochen Yang"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "Cyber Security Scientist"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website."
+    description: "Zhuochen Yang - Cyber Security Scientist at ST Engineering, specializing in Large Language Model security and Generative AI research."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "BuildLore"              # Twitter/X handle for Twitter Cards (without @)
@@ -116,9 +116,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} {name}"
     license:
-      type: cc                          # cc | all_rights | custom
+      type: all_rights                  # cc | all_rights | custom
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
