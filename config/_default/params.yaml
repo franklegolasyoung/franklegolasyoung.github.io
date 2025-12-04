@@ -31,7 +31,7 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: floating-theme-toggler
+    block: floating-theme-toggler
 
 # Site footer
 footer:
