@@ -36,6 +36,9 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.cn/incareer/in/yangzhuochen
     label: LinkedIn Profile
+  - icon: hero/briefcase
+    url: https://franklegolasyoung.github.io/portfolio
+    label: Portfolio
 
 education:
   - area: M.Sc Artificial Intelligence
