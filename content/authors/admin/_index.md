@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Cyber Security Scientist
+role: AI Engineer (Security)
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -46,7 +46,7 @@ education:
     date_start: 2022-08-07
     date_end: 2024-01-31
     summary: |
-      Specialized in AI security and machine learning.
+      Specialized in Deep Learning and Machine Learning.
 
       Key areas of study:
       - Large Language Model
@@ -60,7 +60,7 @@ education:
     date_start: 2018-09-01
     date_end: 2022-06-01
     summary: |
-      Foundation in computer science and software engineering.
+      Foundation in Computer Science and Software Engineering.
 
       Key courses included:
       - Data structures and algorithms
@@ -68,7 +68,7 @@ education:
       - Database systems and software engineering
 
 work:
-  - position: Cyber Security R&D Engineer
+  - position: AI Engineer (Security)
     company_name: ST Engineering
     company_url: 'https://www.stengg.com/'
     company_logo: st-engineering.png
