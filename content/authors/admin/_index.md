@@ -182,4 +182,4 @@ awards:
   #   icon: custom/school
 ---
 
-I’m a Singapore PR and working as Cyber Security Research Engineer at ST Engineering, Singapore, focusing on Generative AI and Large Language Model security and development. I’m very passionate about technology! In my spare time, I enjoy building my own software projects, experimenting with new frameworks, and keeping up with the latest AI advancements.
+I’m a Singapore PR and working as AI Engineer at ST Engineering, focusing on Generative AI and Large Language Model security and development. I’m passionate and self-motivated about new tech! In my spare time, I enjoy building my own software projects, experimenting with new frameworks, and keeping up with the latest AI advancements.
