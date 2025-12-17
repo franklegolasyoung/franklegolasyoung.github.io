@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import type { ChangeEvent, FormEvent } from "react"
 import { Button } from "../ui/button"
-import { Card, CardContent } from "../ui/Card"
+import { Card, CardContent } from "../ui/card"
 import { Input } from "../ui/Input"
 import { Textarea } from "../ui/Textarea"
 import { Mail, Calendar, MapPin, Send } from "lucide-react"

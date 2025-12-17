@@ -1,4 +1,4 @@
-import { Badge } from "../ui/Badge"
+import { Badge } from "../ui/badge"
 import { Award, ExternalLink, Trophy } from "lucide-react"
 import { motion } from "motion/react"
 

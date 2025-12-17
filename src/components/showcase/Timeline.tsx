@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
-import { Badge } from "../ui/Badge"
+import { Badge } from "../ui/badge"
 import { Calendar } from "lucide-react"
 
 const timelineData = [
