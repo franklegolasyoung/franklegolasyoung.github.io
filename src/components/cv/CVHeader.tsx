@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 import { Download, Mail, MapPin, Globe, Github, Linkedin } from "lucide-react"
-import { Button } from "../ui/Button"
+import { Button } from "../ui/button"
 import avatarImg from "../../assets/images/avatar.jpg"
 
 export function CVHeader() {

@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { Button } from "../ui/Button"
+import { Button } from "../ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { Icons } from "../ui/Icons"
 import avatarImg from "../../assets/images/avatar.jpg"
