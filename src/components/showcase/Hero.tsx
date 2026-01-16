@@ -1,8 +1,6 @@
 import { motion } from "motion/react"
 import { Button } from "../ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
-import { Icons } from "../ui/Icons"
-import avatarImg from "../../assets/images/avatar.jpg"
+import { PERSONAL_INFO } from "../../lib/data"
 
 export function Hero() {
   return (
@@ -23,13 +21,13 @@ export function Hero() {
         >
           <div>
              <span className="inline-block px-3 py-1 rounded-full bg-[#5000CA]/10 text-[#5000CA] dark:text-[#8040FF] text-sm font-medium mb-4">
-               Cyber Security Engineer
+               {PERSONAL_INFO.role.split('@')[0].trim()}
              </span>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight mb-4">
-               Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5000CA] to-[#00CACC]">Zhuochen Yang</span>.
+               Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5000CA] to-[#00CACC]">{PERSONAL_INFO.name}</span>.
              </h1>
              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed">
-               Singapore-based Cyber Security Engineer focusing on LLM security, GenAI safety, and shipping production-ready products across the stack.
+               {PERSONAL_INFO.tagline}
              </p>
           </div>
           
@@ -48,10 +46,17 @@ export function Hero() {
           </div>
 
           <div className="flex items-center gap-4 mt-8">
-            <SocialLink icon={<Github className="w-5 h-5" />} href="https://github.com/franklegolasyoung" label="GitHub" />
-            <SocialLink icon={<Linkedin className="w-5 h-5" />} href="https://www.linkedin.com/in/zhuochenyang/" label="LinkedIn" />
-            <SocialLink icon={<Icons.medium className="w-5 h-5" />} href="https://medium.com/@frank1045325433" label="Medium" />
-            <SocialLink icon={<Mail className="w-5 h-5" />} href="mailto:frankyoung@outlook.sg" label="Email" />
+            {PERSONAL_INFO.socials.map((social) => {
+              const Icon = social.icon
+              return (
+                <SocialLink
+                  key={social.name}
+                  icon={<Icon className="w-5 h-5" />}
+                  href={social.url}
+                  label={social.name}
+                />
+              )
+            })}
           </div>
         </motion.div>
 
@@ -64,9 +69,9 @@ export function Hero() {
         >
           <div className="relative aspect-[3/4] md:aspect-square lg:aspect-[4/5] w-64 md:w-full max-w-md mx-auto">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#5000CA] to-[#00CACC] rotate-3 opacity-20 transform translate-x-4 translate-y-4" />
-            <img 
-              src={avatarImg}
-              alt="Portrait of Zhuochen Yang"
+            <img
+              src={PERSONAL_INFO.photo}
+              alt={`Portrait of ${PERSONAL_INFO.name}`}
               className="relative w-full h-full object-cover rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-800"
             />
           </div>

@@ -1,41 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
 import { Badge } from "../ui/badge"
-import { Calendar } from "lucide-react"
-
-const timelineData = [
-  {
-    year: "2024 - Present",
-    title: "Cyber Security Engineer",
-    company: "ST Engineering • Singapore",
-    description:
-      "Researching privacy attacks and defenses for LLM systems and delivering GenAI security tooling for enterprise programs.",
-    tags: ["LLM Security", "GenAI", "Safety Research"]
-  },
-  {
-    year: "2024 - Present",
-    title: "Full-stack Self-motivated Developer",
-    company: "Independent • Singapore",
-    description:
-      "Shipping LangChain workflows, Spring Boot backends, and production ML experiments for personal ventures and freelance clients.",
-    tags: ["LangChain", "Spring Boot", "Docker"]
-  },
-  {
-    year: "2022 - 2024",
-    title: "M.Sc Artificial Intelligence",
-    company: "Nanyang Technological University",
-    description:
-      "Focused on large language models, deep learning, computer vision, natural language processing, and time series analysis.",
-    tags: ["LLMs", "Deep Learning", "NLP"]
-  },
-  {
-    year: "2018 - 2022",
-    title: "B.Eng Computer Science",
-    company: "Harbin Institute of Technology",
-    description: "Built a rigorous foundation in algorithms, operating systems, and user experience design.",
-    tags: ["Algorithms", "Systems", "UX"]
-  }
-]
+import { SHOWCASE_DATA } from "../../lib/data"
 
 export function Timeline() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -67,7 +33,7 @@ export function Timeline() {
           />
 
           <div className="space-y-16">
-            {timelineData.map((item, index) => (
+            {SHOWCASE_DATA.timeline.map((item, index) => (
               <TimelineItem key={index} item={item} index={index} />
             ))}
           </div>

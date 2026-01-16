@@ -1,7 +1,6 @@
-import { motion } from "motion/react"
-import { Download, Mail, MapPin, Globe, Github, Linkedin } from "lucide-react"
+import { Download, Mail, MapPin } from "lucide-react"
 import { Button } from "../ui/button"
-import avatarImg from "../../assets/images/avatar.jpg"
+import { PERSONAL_INFO } from "../../lib/data"
 
 export function CVHeader() {
   return (
@@ -9,40 +8,39 @@ export function CVHeader() {
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="relative w-40 h-40 rounded-full border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg bg-white shrink-0">
-            <img 
-              src={avatarImg} 
-              alt="Portrait of Zhuochen Yang" 
+            <img
+              src={PERSONAL_INFO.photo}
+              alt={`Portrait of ${PERSONAL_INFO.name}`}
               className="w-full h-full object-cover"
             />
           </div>
-          
+
           <div className="flex-1 text-center md:text-left pt-4 md:pt-2">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">Zhuochen Yang</h1>
-            <p className="text-xl text-[#5000CA] dark:text-[#8040FF] font-medium mb-4">Cyber Security Engineer @ ST Engineering</p>
-            
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">{PERSONAL_INFO.name}</h1>
+            <p className="text-xl text-[#5000CA] dark:text-[#8040FF] font-medium mb-4">{PERSONAL_INFO.role}</p>
+
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600 dark:text-gray-400 mt-6">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:frankyoung@outlook.sg" className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
-                  frankyoung@outlook.sg
+                <a href={`mailto:${PERSONAL_INFO.email}`} className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
+                  {PERSONAL_INFO.email}
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                Singapore (PR)
+                {PERSONAL_INFO.location}
               </div>
-              <div className="flex items-center gap-2">
-                <Github className="w-4 h-4" />
-                <a href="https://github.com/franklegolasyoung" target="_blank" rel="noreferrer" className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
-                  GitHub
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Linkedin className="w-4 h-4" />
-                <a href="https://www.linkedin.com/in/zhuochenyang/" target="_blank" rel="noreferrer" className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
-                  LinkedIn
-                </a>
-              </div>
+              {PERSONAL_INFO.socials.filter(s => s.name === "GitHub" || s.name === "LinkedIn").map((social) => {
+                const Icon = social.icon
+                return (
+                  <div key={social.name} className="flex items-center gap-2">
+                    <Icon className="w-4 h-4" />
+                    <a href={social.url} target="_blank" rel="noreferrer" className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
+                      {social.name}
+                    </a>
+                  </div>
+                )
+              })}
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 import { Badge } from "../ui/badge"
-import { Award, ExternalLink, Trophy } from "lucide-react"
+import { Trophy } from "lucide-react"
 import { motion } from "motion/react"
+import { CV_DATA } from "../../lib/data"
 
 export function CVContent() {
   return (
@@ -14,9 +15,7 @@ export function CVContent() {
               Professional Summary
             </h2>
             <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed text-[0.95em]">
-              Singapore-based Cyber Security Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair
-              hands-on LLM experimentation with production-ready full-stack systems and DevOps foundations, and I keep a creative
-              practice alive through photography and storytelling.
+              {CV_DATA.summary}
             </p>
           </section>
 
@@ -25,26 +24,18 @@ export function CVContent() {
                 Education
               </h2>
               <div className="space-y-6">
-                <div className="flex flex-col sm:flex-row justify-between sm:items-baseline">
-                  <div>
-                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">M.Sc Artificial Intelligence</h3>
-                     <p className="text-[#5000CA] font-medium">Nanyang Technological University</p>
-                     <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                       Specialized in large language models, deep learning, computer vision, NLP, and time series analysis with a focus on responsible AI.
-                     </p>
+                {CV_DATA.education.map((edu, index) => (
+                  <div key={index} className="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                    <div>
+                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">{edu.degree}</h3>
+                       <p className="text-[#5000CA] font-medium">{edu.school}</p>
+                       <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
+                         {edu.description}
+                       </p>
+                    </div>
+                    <span className="text-gray-500 text-sm whitespace-nowrap">{edu.period}</span>
                   </div>
-                  <span className="text-gray-500 text-sm whitespace-nowrap">2022 - 2024</span>
-                </div>
-                 <div className="flex flex-col sm:flex-row justify-between sm:items-baseline">
-                  <div>
-                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">B.Eng Computer Science and Technology</h3>
-                     <p className="text-[#5000CA] font-medium">Harbin Institute of Technology</p>
-                     <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                       Built a strong foundation in algorithms, operating systems, networks, databases, and user experience design.
-                     </p>
-                  </div>
-                  <span className="text-gray-500 text-sm whitespace-nowrap">2018 - 2022</span>
-                </div>
+                ))}
             </div>
           </section>
 
@@ -53,28 +44,16 @@ export function CVContent() {
               Experience
             </h2>
             <div className="space-y-8">
-              <JobItem 
-                role="Cyber Security Engineer"
-                company="ST Engineering"
-                period="Jan 2024 - Present"
-                location="Singapore"
-                details={[
-                  "Lead research and development across LLM security, privacy attack simulations, and safety evaluations for enterprise deployments.",
-                  "Designed internal tooling that detects jailbreak attempts and AI-generated text to safeguard mission-critical workflows.",
-                  "Published the first-author paper \"CoSPED: Consistent Soft-Prompt Targeted Data Extraction & Defense\" accepted at AAAI-26's AI Alignment track."
-                ]}
-              />
-              <JobItem 
-                role="Full-stack & GenAI Builder"
-                company="Independent"
-                period="2024 - Present"
-                location="Singapore / Remote"
-                details={[
-                  "Architected full-stack products such as PixCloud (media collaboration) and ChatLah (LLM-assisted equities research).",
-                  "Implemented LangChain / LangGraph agents, Spring Boot + FastAPI services, and observability pipelines deployed with Docker and Nginx.",
-                  "Collaborated with designers, founders, and researchers to translate ambiguous ideas into shippable software."
-                ]}
-              />
+              {CV_DATA.experience.map((exp, index) => (
+                <JobItem
+                  key={index}
+                  role={exp.role}
+                  company={exp.company}
+                  period={exp.period}
+                  location={exp.location}
+                  details={exp.highlights}
+                />
+              ))}
             </div>
           </section>
 
@@ -83,36 +62,14 @@ export function CVContent() {
               Awards & Certificates
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <AwardCard 
-                title="CoSPED: Consistent Soft Prompt Targeted Data Extraction & Defense" 
-                issuer="AAAI-26 AI Alignment Track" 
-                date="2026"
-              />
-              <AwardCard 
-                title="Oracle AI Vector Search Certified Professional" 
-                issuer="Oracle" 
-                date="2025"
-              />
-              <AwardCard 
-                title="NVIDIA: Building RAG Agents with LLMs" 
-                issuer="NVIDIA" 
-                date="2024"
-              />
-              <AwardCard 
-                title="Mathematics for Machine Learning: Multivariate Calculus" 
-                issuer="Imperial College London (Coursera)" 
-                date="2021"
-              />
-              <AwardCard 
-                title="Text Retrieval and Search Engines" 
-                issuer="University of Illinois (Coursera)" 
-                date="2021"
-              />
-              <AwardCard 
-                title="Divide and Conquer, Sorting and Searching, and Randomized Algorithms" 
-                issuer="Stanford University (Coursera)" 
-                date="2021"
-              />
+              {CV_DATA.awards.map((award, index) => (
+                <AwardCard
+                  key={index}
+                  title={award.title}
+                  issuer={award.issuer}
+                  date={award.year}
+                />
+              ))}
             </div>
           </section>
 
@@ -126,12 +83,9 @@ export function CVContent() {
               Skills
             </h2>
             <div className="space-y-4">
-              <SkillBar name="Python" percentage={100} />
-              <SkillBar name="Java" percentage={80} />
-              <SkillBar name="C++" percentage={70} />
-              <SkillBar name="LangChain / RAG" percentage={85} />
-              <SkillBar name="Spring Boot & FastAPI" percentage={80} />
-              <SkillBar name="Docker & Cloud Infra" percentage={75} />
+              {CV_DATA.skills.map((skill, index) => (
+                <SkillBar key={index} name={skill.name} percentage={skill.level} />
+              ))}
             </div>
           </section>
 
@@ -140,18 +94,12 @@ export function CVContent() {
               Languages
             </h2>
              <ul className="space-y-2">
-              <li className="flex justify-between">
-                <span>Chinese</span>
-                <span className="text-gray-500">Native</span>
-              </li>
-               <li className="flex justify-between">
-                <span>English</span>
-                <span className="text-gray-500">Professional</span>
-              </li>
-               <li className="flex justify-between">
-                <span>Spanish</span>
-                <span className="text-gray-500">Conversational</span>
-              </li>
+              {CV_DATA.languages.map((lang, index) => (
+                <li key={index} className="flex justify-between">
+                  <span>{lang.name}</span>
+                  <span className="text-gray-500">{lang.level}</span>
+                </li>
+              ))}
             </ul>
           </section>
 
@@ -160,11 +108,9 @@ export function CVContent() {
               Interests
             </h2>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="outline">Table Tennis</Badge>
-              <Badge variant="outline">Photography</Badge>
-              <Badge variant="outline">Cats</Badge>
-              <Badge variant="outline">Open Source</Badge>
-              <Badge variant="outline">LLM Safety</Badge>
+              {CV_DATA.interests.map((interest, index) => (
+                <Badge key={index} variant="outline">{interest}</Badge>
+              ))}
             </div>
           </section>
         </div>

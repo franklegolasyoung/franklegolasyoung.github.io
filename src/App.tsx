@@ -2,6 +2,7 @@ import * as React from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { Layout } from "./components/layout/Layout"
 import { Hero } from "./components/showcase/Hero"
+import { About } from "./components/showcase/About"
 import { Expertise } from "./components/showcase/Expertise"
 import { Timeline } from "./components/showcase/Timeline"
 import { Projects } from "./components/showcase/Projects"
@@ -41,6 +42,7 @@ export default function App() {
             transition={{ duration: 0.3 }}
           >
             <Hero />
+            <About />
             <Expertise />
             <Timeline />
             <Projects />

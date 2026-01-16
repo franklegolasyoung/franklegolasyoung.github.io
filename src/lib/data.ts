@@ -22,7 +22,7 @@ import zoteroImg from "../assets/images/zotero.png"
 export const PERSONAL_INFO = {
   name: "Zhuochen Yang",
   initials: "ZY",
-  tagline: "Cyber Security Engineer | AI Researcher | Full-Stack Developer",
+  tagline: "Singapore-based Cyber Security Engineer specializing in Generative AI security and LLM safety research. Building secure, scalable full-stack applications while advancing AI alignment and privacy protection.",
   role: "Cyber Security Engineer @ ST Engineering",
   location: "Singapore",
   availability: "",
@@ -47,7 +47,7 @@ export const SHOWCASE_DATA = {
       title: "Full Stack Development",
       icon: Layout,
       description:
-        "Experienced in building scalable web applications using Spring Boot, Flask, and FastAPI. Proficient across frontend (React, TypeScript) and backend development with a strong understanding of RESTful APIs and microservices architecture.",
+        "Experienced in building scalable web applications using Spring Boot, Flask, and FastAPI. Proficient across frontend and backend development with a strong understanding of RESTful APIs and microservices architecture.",
       tags: ["Spring Boot", "React", "TypeScript", "FastAPI", "PostgreSQL", "Microservices"]
     },
     {
@@ -118,9 +118,9 @@ export const SHOWCASE_DATA = {
     {
       title: "CoSPED Research Paper",
       description:
-        "First-author AAAI-26 paper introducing a consistent soft prompt targeted data extraction framework plus defensive strategies for LLM privacy.",
+        "First-author AAAI 2026 paper introducing a consistent soft prompt targeted data extraction framework plus defensive strategies for LLM privacy.",
       image: cospedImg,
-      tags: ["Research", "LLM Security", "AAAI-26"],
+      tags: ["Research", "LLM Security", "AAAI 2026"],
       url: "https://www.semanticscholar.org/paper/CoSPED%3A-Consistent-Soft-Prompt-Targeted-Data-and-Yang-Wai/fb09eaceb17a4813fd8ce3496d01e1c78c6cec06"
     },
     {
@@ -146,7 +146,7 @@ export const SHOWCASE_DATA = {
 
 export const CV_DATA = {
   summary:
-    "Singapore-based Cyber Security Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair hands-on LLM experimentation with production-ready full-stack systems and DevOps foundations, and I keep a creative practice alive through photography and storytelling.",
+    "Singapore-based Cyber Security Engineer specializing in Generative AI security and LLM safety research. Experienced in developing privacy attack simulations, jailbreak detection systems, and AI-generated content identification tools for enterprise deployments. Combines hands-on research in LLM privacy and alignment with production engineering expertise, building scalable full-stack applications using modern frameworks including Spring Boot, FastAPI, and React. Published first-author research at AAAI 2026 on targeted data extraction and defense mechanisms for large language models. Proficient in cloud infrastructure, containerization, and CI/CD pipelines on AWS and GCP.",
   experience: [
     {
       company: "ST Engineering",
@@ -157,7 +157,7 @@ export const CV_DATA = {
       highlights: [
         "Lead research and development across LLM security, privacy attack simulations, and safety evaluations for enterprise deployments.",
         "Designed internal tooling that detects jailbreak attempts and AI-generated text to safeguard mission-critical workflows.",
-        "Published the first-author paper \"CoSPED: Consistent Soft-Prompt Targeted Data Extraction & Defense\" accepted at AAAI-26's AI Alignment track."
+        "Published the first-author paper \"CoSPED: Consistent Soft-Prompt Targeted Data Extraction & Defense\" accepted at AAAI 2026's AI Alignment track."
       ]
     },
     {
@@ -205,7 +205,7 @@ export const CV_DATA = {
   awards: [
     {
       title: "CoSPED: Consistent Soft Prompt Targeted Data Extraction & Defense",
-      issuer: "AAAI-26 AI Alignment Track",
+      issuer: "AAAI 2026 AI Alignment Track",
       year: "2026"
     },
     {

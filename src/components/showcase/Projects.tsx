@@ -1,42 +1,7 @@
 import { motion } from "motion/react"
-import { Card } from "../ui/card"
 import { Badge } from "../ui/badge"
 import { ArrowUpRight } from "lucide-react"
-import pixcloudImg from "../../assets/images/pixcloud.jpg"
-import chatlahImg from "../../assets/images/chatlah.png"
-import cospedImg from "../../assets/images/cosped.png"
-import zoteroImg from "../../assets/images/zotero.png"
-
-const projects = [
-  {
-    title: "PixCloud",
-    description:
-      "Image storage, sharing, and collaboration platform powered by Spring Boot, Vue, MySQL, Redis, AWS, COS Storage, Kafka, and CDN acceleration.",
-    image: pixcloudImg,
-    stack: ["Spring Boot", "Vue", "MySQL", "Redis", "AWS"]
-  },
-  {
-    title: "ChatLah",
-    description:
-      "RAG-Agent system for equities research that fuses market news, prices, retrieval/reranking, and structured LLM reasoning to produce traceable investment briefs.",
-    image: chatlahImg,
-    stack: ["LangChain", "PostgreSQL", "AWS", "RAG", "Agents"]
-  },
-  {
-    title: "CoSPED Research Paper",
-    description:
-      "First-author AAAI-26 paper introducing a consistent soft prompt targeted data extraction framework plus defensive strategies for LLM privacy.",
-    image: cospedImg,
-    stack: ["Research", "LLM Security", "AAAI-26"]
-  },
-  {
-    title: "Zotero Snap",
-    description:
-      "Maintainer for the Linux Snap Store build of Zotero, simplifying installation and lifecycle management for research teams on Linux.",
-    image: zoteroImg,
-    stack: ["Zotero", "Snapcraft", "DevOps"]
-  }
-]
+import { SHOWCASE_DATA, PERSONAL_INFO } from "../../lib/data"
 
 export function Projects() {
   return (
@@ -50,7 +15,7 @@ export function Projects() {
              </p>
           </div>
           <a
-            href="https://github.com/franklegolasyoung"
+            href={PERSONAL_INFO.socials.find(s => s.name === "GitHub")?.url}
             target="_blank"
             rel="noreferrer"
             className="hidden md:flex items-center gap-2 text-[#5000CA] font-medium hover:underline"
@@ -60,7 +25,7 @@ export function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {SHOWCASE_DATA.projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
@@ -69,8 +34,8 @@ export function Projects() {
               viewport={{ once: true }}
               className="group relative aspect-video rounded-2xl overflow-hidden cursor-pointer"
             >
-              <img 
-                src={project.image} 
+              <img
+                src={project.image}
                 alt={project.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -80,9 +45,9 @@ export function Projects() {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
-                  {project.stack.map(tech => (
-                    <Badge key={tech} className="bg-white/20 text-white border-none hover:bg-white/30 backdrop-blur-md">
-                      {tech}
+                  {project.tags.map((tag) => (
+                    <Badge key={tag} className="bg-white/20 text-white border-none hover:bg-white/30 backdrop-blur-md">
+                      {tag}
                     </Badge>
                   ))}
                 </div>
@@ -93,7 +58,7 @@ export function Projects() {
         
         <div className="mt-8 text-center md:hidden">
           <a
-            href="https://github.com/franklegolasyoung"
+            href={PERSONAL_INFO.socials.find(s => s.name === "GitHub")?.url}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-[#5000CA] font-medium hover:underline"

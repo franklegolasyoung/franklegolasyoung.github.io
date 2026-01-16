@@ -3,6 +3,7 @@ import { ThemeToggle } from "./ThemeToggle"
 import { Briefcase, LayoutTemplate } from "lucide-react"
 import { motion } from "motion/react"
 import { cn } from "../lib/utils"
+import { PERSONAL_INFO } from "../../lib/data"
 
 import { ScrollToTop } from "../ui/ScrollToTop"
 
@@ -20,9 +21,9 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-[#5000CA] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#5000CA]/20">
-              ZY
+              {PERSONAL_INFO.initials}
             </div>
-            <span className="font-bold text-xl tracking-tight hidden sm:inline-block">Zhuochen Yang</span>
+            <span className="font-bold text-xl tracking-tight hidden sm:inline-block">{PERSONAL_INFO.name}</span>
           </div>
 
           <div className="flex items-center gap-4">
@@ -75,7 +76,7 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
       </main>
       <footer className="py-8 border-t border-gray-200 dark:border-gray-800 mt-20">
         <div className="container mx-auto px-4 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Zhuochen Yang. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.</p>
         </div>
       </footer>
     </div>
