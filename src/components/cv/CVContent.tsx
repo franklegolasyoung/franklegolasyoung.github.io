@@ -14,7 +14,7 @@ export function CVContent() {
               Professional Summary
             </h2>
             <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed text-[0.95em]">
-              Singapore-based AI Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair
+              Singapore-based Cyber Security Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair
               hands-on LLM experimentation with production-ready full-stack systems and DevOps foundations, and I keep a creative
               practice alive through photography and storytelling.
             </p>
@@ -54,7 +54,7 @@ export function CVContent() {
             </h2>
             <div className="space-y-8">
               <JobItem 
-                role="AI Engineer (Security)"
+                role="Cyber Security Engineer"
                 company="ST Engineering"
                 period="Jan 2024 - Present"
                 location="Singapore"

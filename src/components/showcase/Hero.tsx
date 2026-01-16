@@ -23,13 +23,13 @@ export function Hero() {
         >
           <div>
              <span className="inline-block px-3 py-1 rounded-full bg-[#5000CA]/10 text-[#5000CA] dark:text-[#8040FF] text-sm font-medium mb-4">
-               AI Engineer (Security)
+               Cyber Security Engineer
              </span>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight mb-4">
                Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5000CA] to-[#00CACC]">Zhuochen Yang</span>.
              </h1>
              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed">
-               Singapore-based AI Engineer focusing on LLM security, GenAI safety, and shipping production-ready products across the stack.
+               Singapore-based Cyber Security Engineer focusing on LLM security, GenAI safety, and shipping production-ready products across the stack.
              </p>
           </div>
           

@@ -6,7 +6,7 @@ import { Calendar } from "lucide-react"
 const timelineData = [
   {
     year: "2024 - Present",
-    title: "AI Engineer (Security)",
+    title: "Cyber Security Engineer",
     company: "ST Engineering • Singapore",
     description:
       "Researching privacy attacks and defenses for LLM systems and delivering GenAI security tooling for enterprise programs.",

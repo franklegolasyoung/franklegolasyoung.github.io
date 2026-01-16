@@ -18,7 +18,7 @@ export function CVHeader() {
           
           <div className="flex-1 text-center md:text-left pt-4 md:pt-2">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">Zhuochen Yang</h1>
-            <p className="text-xl text-[#5000CA] dark:text-[#8040FF] font-medium mb-4">AI Engineer (Security) @ ST Engineering</p>
+            <p className="text-xl text-[#5000CA] dark:text-[#8040FF] font-medium mb-4">Cyber Security Engineer @ ST Engineering</p>
             
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600 dark:text-gray-400 mt-6">
               <div className="flex items-center gap-2">

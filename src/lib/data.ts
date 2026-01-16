@@ -146,7 +146,7 @@ export const SHOWCASE_DATA = {
 
 export const CV_DATA = {
   summary:
-    "Singapore-based AI Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair hands-on LLM experimentation with production-ready full-stack systems and DevOps foundations, and I keep a creative practice alive through photography and storytelling.",
+    "Singapore-based Cyber Security Engineer focusing on Generative AI security, privacy attacks/defenses, and safety research. I pair hands-on LLM experimentation with production-ready full-stack systems and DevOps foundations, and I keep a creative practice alive through photography and storytelling.",
   experience: [
     {
       company: "ST Engineering",
