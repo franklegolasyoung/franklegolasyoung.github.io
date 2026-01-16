@@ -22,8 +22,8 @@ import zoteroImg from "../assets/images/zotero.png"
 export const PERSONAL_INFO = {
   name: "Zhuochen Yang",
   initials: "ZY",
-  tagline: "AI Engineer (Security)",
-  role: "AI Engineer (Security) @ ST Engineering",
+  tagline: "Cyber Security Engineer | AI Researcher | Full-Stack Developer",
+  role: "Cyber Security Engineer @ ST Engineering",
   location: "Singapore",
   availability: "",
   email: "frankyoung@outlook.sg",
@@ -38,7 +38,7 @@ export const PERSONAL_INFO = {
 
 export const SHOWCASE_DATA = {
   about: [
-    "I am a Singapore-based AI Engineer specializing in LLM security and safety, holding a Master of Science in Artificial Intelligence from Nanyang Technological University.",
+    "I am a Singapore-based Cyber Security Engineer specializing in LLM security and safety, holding a Master of Science in Artificial Intelligence from Nanyang Technological University.",
     "Complementing my core expertise in AI and cybersecurity, I actively develop full-stack applications and operate a freelance photography practice, blending technical precision with creative vision to deliver innovative solutions across technology and visual arts domains.",
     "Reachable at frankyoung@outlook.sg for collaborative opportunities."
   ],
@@ -68,7 +68,7 @@ export const SHOWCASE_DATA = {
   timeline: [
     {
       year: "2024 - Present",
-      title: "AI Engineer (Security)",
+      title: "Cyber Security Engineer",
       company: "ST Engineering • Singapore",
       description:
         "Researching privacy attacks and defenses for LLM systems and delivering GenAI security tooling for enterprise programs.",
@@ -150,7 +150,7 @@ export const CV_DATA = {
   experience: [
     {
       company: "ST Engineering",
-      role: "AI Engineer (Security)",
+      role: "Cyber Security Engineer",
       period: "Jan 2024 - Present",
       location: "Singapore",
       logo: Cpu,
@@ -161,8 +161,8 @@ export const CV_DATA = {
       ]
     },
     {
-      company: "Independent",
-      role: "Full-stack & GenAI Builder",
+      company: "Self Motivated",
+      role: "Full-stack & GenAI Developer",
       period: "2024 - Present",
       location: "Singapore / Remote",
       logo: Layout,
