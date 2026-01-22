@@ -50,7 +50,7 @@ export function MapMyVisitors() {
     if (existingWidget) existingWidget.remove()
 
     // Create script with exact parameter order as required by MapMyVisitors
-    const co = isDark ? "000000" : "0a0a0a"
+    const co = isDark ? "000000" : "0f0f0f"
     const script = document.createElement("script")
     script.type = "text/javascript"
     script.id = "mapmyvisitors"
