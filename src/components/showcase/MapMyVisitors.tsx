@@ -3,14 +3,17 @@ import { useEffect, useRef, useState } from "react"
 export function MapMyVisitors() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerWidth, setContainerWidth] = useState(0)
-  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"))
+  const [isDark, setIsDark] = useState<boolean | null>(null) // Start as null until confirmed
   const currentThemeRef = useRef<boolean | null>(null)
 
-  // Detect theme changes
+  // Detect theme changes - runs first to determine actual theme
   useEffect(() => {
     const updateTheme = () => {
       setIsDark(document.documentElement.classList.contains("dark"))
     }
+
+    // Set initial theme immediately
+    updateTheme()
 
     const observer = new MutationObserver(updateTheme)
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] })
@@ -39,7 +42,8 @@ export function MapMyVisitors() {
 
   // Load script when width is ready or theme changes
   useEffect(() => {
-    if (containerWidth === 0 || !containerRef.current) return
+    // Wait until theme is confirmed (not null) and container width is measured
+    if (isDark === null || containerWidth === 0 || !containerRef.current) return
 
     // Skip if theme hasn't changed
     if (currentThemeRef.current === isDark) return
