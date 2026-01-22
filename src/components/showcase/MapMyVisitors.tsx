@@ -2,21 +2,23 @@ import { useEffect } from "react"
 
 export function MapMyVisitors() {
   useEffect(() => {
-    // Create script element for the globe widget
+    // Check if script already exists to prevent duplicates
+    if (document.getElementById("mapmyvisitors")) {
+      return
+    }
+
+    // Create script element - MUST use exact ID "mapmyvisitors" as required by the service
     const script = document.createElement("script")
     script.type = "text/javascript"
-    script.id = "mmvst_globe"
-    script.src = "https://mapmyvisitors.com/globe.js?d=5wxnzsgw8tByOK6jHN-YwYM2g3h2n23FFxwD2CbFAI0"
+    script.id = "mapmyvisitors"
+    script.src = "https://mapmyvisitors.com/map.js?cl=d2efd6&w=300&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"
 
-    // Append to the globe container
-    const container = document.getElementById("globe-widget-container")
-    if (container) {
-      container.appendChild(script)
-    }
+    // Append to document body as required by MapMyVisitors
+    document.body.appendChild(script)
 
     // Cleanup function
     return () => {
-      const scriptElement = document.getElementById("mmvst_globe")
+      const scriptElement = document.getElementById("mapmyvisitors")
       if (scriptElement) {
         scriptElement.remove()
       }
@@ -30,14 +32,11 @@ export function MapMyVisitors() {
         <p className="text-gray-600 dark:text-gray-400">See where my visitors come from around the world.</p>
       </div>
 
-      {/* Globe Widget Container */}
+      {/* Map Widget Container - the script will inject the map here */}
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-center items-center min-h-[450px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6">
-          <div id="globe-widget-container" className="flex justify-center items-center" />
+        <div className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6">
+          <div id="mapmyvisitors-container" className="flex justify-center items-center" />
         </div>
-        <p className="text-center text-sm text-gray-500 dark:text-gray-500 mt-4">
-          Globe widget will display after deployment to the live site.
-        </p>
       </div>
     </div>
   )
