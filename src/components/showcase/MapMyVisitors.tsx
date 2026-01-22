@@ -2,20 +2,33 @@ import { useEffect, useRef } from "react"
 
 export function MapMyVisitors() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const scriptAddedRef = useRef(false)
 
   useEffect(() => {
-    // Move the MapMyVisitors widget into our container
-    const widget = document.getElementById("mapmyvisitors-widget")
-    if (widget && containerRef.current) {
-      containerRef.current.appendChild(widget)
-    }
+    if (!containerRef.current || scriptAddedRef.current) return
 
-    // Cleanup - move widget back to body on unmount
+    // Remove any existing mapmyvisitors elements first
+    const existingScript = document.getElementById("mapmyvisitors")
+    if (existingScript) existingScript.remove()
+    const existingWidget = document.getElementById("mapmyvisitors-widget")
+    if (existingWidget) existingWidget.remove()
+
+    // Create and append script directly to the container
+    const script = document.createElement("script")
+    script.type = "text/javascript"
+    script.id = "mapmyvisitors"
+    script.src = "https://mapmyvisitors.com/map.js?cl=d2efd6&w=300&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"
+
+    containerRef.current.appendChild(script)
+    scriptAddedRef.current = true
+
     return () => {
+      // Cleanup on unmount
+      const script = document.getElementById("mapmyvisitors")
+      if (script) script.remove()
       const widget = document.getElementById("mapmyvisitors-widget")
-      if (widget) {
-        document.body.appendChild(widget)
-      }
+      if (widget) widget.remove()
+      scriptAddedRef.current = false
     }
   }, [])
 
@@ -26,11 +39,11 @@ export function MapMyVisitors() {
         <p className="text-gray-600 dark:text-gray-400">See where my visitors come from around the world.</p>
       </div>
 
-      {/* Map Widget Container - the widget from index.html will be moved here */}
+      {/* Map Widget Container - script will be appended here and widget created after it */}
       <div className="max-w-4xl mx-auto">
         <div
           ref={containerRef}
-          className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6 overflow-hidden"
+          className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6 overflow-hidden [&_#mapmyvisitors-widget]:!position-static"
         />
       </div>
     </div>
