@@ -24,7 +24,8 @@ export function MapMyVisitors() {
 
     const updateWidth = () => {
       if (containerRef.current) {
-        const width = containerRef.current.clientWidth - 32
+        const rawWidth = containerRef.current.clientWidth - 32
+        const width = Math.max(rawWidth, 200)
         setContainerWidth(Math.floor(width))
       }
     }
