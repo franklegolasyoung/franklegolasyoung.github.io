@@ -9,6 +9,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import emailjs from "@emailjs/browser"
 import { SHOWCASE_DATA } from "../../lib/data"
 import Giscus from "@giscus/react"
+import { MapMyVisitors } from "./MapMyVisitors"
 
 type FormState = {
   name: string
@@ -225,6 +226,9 @@ export function Contact() {
             </CardContent>
           </Card>
         </div>
+
+        {/* MapMyVisitors Widget */}
+        <MapMyVisitors />
 
         {/* Giscus / Message Board Placeholder */}
         <div className="mt-24 max-w-4xl mx-auto">
