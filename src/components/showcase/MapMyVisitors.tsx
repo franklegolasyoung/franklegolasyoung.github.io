@@ -1,26 +1,20 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 export function MapMyVisitors() {
+  const containerRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    // Check if script already exists to prevent duplicates
-    if (document.getElementById("mapmyvisitors")) {
-      return
+    // Move the MapMyVisitors widget into our container
+    const widget = document.getElementById("mapmyvisitors-widget")
+    if (widget && containerRef.current) {
+      containerRef.current.appendChild(widget)
     }
 
-    // Create script element - MUST use exact ID "mapmyvisitors" as required by the service
-    const script = document.createElement("script")
-    script.type = "text/javascript"
-    script.id = "mapmyvisitors"
-    script.src = "https://mapmyvisitors.com/map.js?cl=d2efd6&w=300&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"
-
-    // Append to document body as required by MapMyVisitors
-    document.body.appendChild(script)
-
-    // Cleanup function
+    // Cleanup - move widget back to body on unmount
     return () => {
-      const scriptElement = document.getElementById("mapmyvisitors")
-      if (scriptElement) {
-        scriptElement.remove()
+      const widget = document.getElementById("mapmyvisitors-widget")
+      if (widget) {
+        document.body.appendChild(widget)
       }
     }
   }, [])
@@ -32,11 +26,12 @@ export function MapMyVisitors() {
         <p className="text-gray-600 dark:text-gray-400">See where my visitors come from around the world.</p>
       </div>
 
-      {/* Map Widget Container - the script will inject the map here */}
+      {/* Map Widget Container - the widget from index.html will be moved here */}
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6">
-          <div id="mapmyvisitors-container" className="flex justify-center items-center" />
-        </div>
+        <div
+          ref={containerRef}
+          className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6 overflow-hidden"
+        />
       </div>
     </div>
   )
