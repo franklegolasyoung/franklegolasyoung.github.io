@@ -6,7 +6,7 @@ export function MapMyVisitors() {
     const script = document.createElement("script")
     script.type = "text/javascript"
     script.id = "mmvst_globe"
-    script.src = "https://mapmyvisitors.com/globe.js?d=G00Icc1PlUiLUuWvwTl81hU_dProxdBz99lgG6Knx5E"
+    script.src = "https://mapmyvisitors.com/globe.js?d=5wxnzsgw8tByOK6jHN-YwYM2g3h2n23FFxwD2CbFAI0"
 
     // Append to the globe container
     const container = document.getElementById("globe-widget-container")
