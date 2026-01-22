@@ -17,7 +17,7 @@ export function MapMyVisitors() {
     const script = document.createElement("script")
     script.type = "text/javascript"
     script.id = "mapmyvisitors"
-    script.src = "https://mapmyvisitors.com/map.js?cl=d2efd6&w=300&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"
+    script.src = "https://mapmyvisitors.com/map.js?cl=ffffff&w=320&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU"
 
     containerRef.current.appendChild(script)
     scriptAddedRef.current = true
@@ -40,10 +40,10 @@ export function MapMyVisitors() {
       </div>
 
       {/* Map Widget Container - script will be appended here and widget created after it */}
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         <div
           ref={containerRef}
-          className="flex justify-center items-center min-h-[350px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-6 overflow-hidden [&_#mapmyvisitors-widget]:!position-static"
+          className="flex justify-center items-center min-h-[400px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-4 overflow-hidden"
         />
       </div>
     </div>
