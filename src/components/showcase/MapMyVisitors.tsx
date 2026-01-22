@@ -1,19 +1,16 @@
 import { useEffect, useRef, useState } from "react"
 
 export function MapMyVisitors() {
-  const lightContainerRef = useRef<HTMLDivElement>(null)
-  const darkContainerRef = useRef<HTMLDivElement>(null)
-  const scriptsLoadedRef = useRef(false)
+  const containerRef = useRef<HTMLDivElement>(null)
   const [containerWidth, setContainerWidth] = useState(0)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"))
+  const currentThemeRef = useRef<boolean | null>(null)
 
   // Detect theme changes
   useEffect(() => {
     const updateTheme = () => {
       setIsDark(document.documentElement.classList.contains("dark"))
     }
-
-    updateTheme()
 
     const observer = new MutationObserver(updateTheme)
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] })
@@ -23,13 +20,11 @@ export function MapMyVisitors() {
 
   // Measure container width
   useEffect(() => {
-    const container = lightContainerRef.current || darkContainerRef.current
-    if (!container) return
+    if (!containerRef.current) return
 
     const updateWidth = () => {
-      if (container) {
-        // Get container width minus padding (p-4 = 16px * 2 = 32px)
-        const width = container.clientWidth - 32
+      if (containerRef.current) {
+        const width = containerRef.current.clientWidth - 32
         setContainerWidth(Math.floor(width))
       }
     }
@@ -37,47 +32,41 @@ export function MapMyVisitors() {
     updateWidth()
 
     const resizeObserver = new ResizeObserver(updateWidth)
-    resizeObserver.observe(container)
+    resizeObserver.observe(containerRef.current)
 
     return () => resizeObserver.disconnect()
   }, [])
 
-  // Load both light and dark scripts when we have the width
+  // Load script when width is ready or theme changes
   useEffect(() => {
-    if (scriptsLoadedRef.current || containerWidth === 0) return
-    if (!lightContainerRef.current || !darkContainerRef.current) return
+    if (containerWidth === 0 || !containerRef.current) return
 
-    // Remove any existing mapmyvisitors elements first
-    document.querySelectorAll('[id^="mapmyvisitors"]').forEach(el => el.remove())
+    // Skip if theme hasn't changed
+    if (currentThemeRef.current === isDark) return
+    currentThemeRef.current = isDark
 
-    // Base URL parameters
-    const baseParams = `cl=135d9e&w=${containerWidth}&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&cmo=3acc3a&cmn=ff5353&ct=808080`
+    // Remove any existing mapmyvisitors elements
+    const existingScript = document.getElementById("mapmyvisitors")
+    if (existingScript) existingScript.remove()
+    const existingWidget = document.getElementById("mapmyvisitors-widget")
+    if (existingWidget) existingWidget.remove()
 
-    // Create light theme script (co=ffffff)
-    const lightScript = document.createElement("script")
-    lightScript.type = "text/javascript"
-    lightScript.id = "mapmyvisitors-light"
-    lightScript.src = `https://mapmyvisitors.com/map.js?${baseParams}&co=ffffff`
-    lightContainerRef.current.appendChild(lightScript)
+    // Create script with exact parameter order as required by MapMyVisitors
+    const co = isDark ? "000000" : "ffffff"
+    const script = document.createElement("script")
+    script.type = "text/javascript"
+    script.id = "mapmyvisitors"
+    script.src = `https://mapmyvisitors.com/map.js?cl=135d9e&w=${containerWidth}&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=${co}&cmo=3acc3a&cmn=ff5353&ct=808080`
 
-    // Create dark theme script (co=000000) after a short delay to avoid conflicts
-    setTimeout(() => {
-      if (darkContainerRef.current) {
-        const darkScript = document.createElement("script")
-        darkScript.type = "text/javascript"
-        darkScript.id = "mapmyvisitors-dark"
-        darkScript.src = `https://mapmyvisitors.com/map.js?${baseParams}&co=000000`
-        darkContainerRef.current.appendChild(darkScript)
-      }
-    }, 500)
-
-    scriptsLoadedRef.current = true
+    containerRef.current.appendChild(script)
 
     return () => {
-      document.querySelectorAll('[id^="mapmyvisitors"]').forEach(el => el.remove())
-      scriptsLoadedRef.current = false
+      const script = document.getElementById("mapmyvisitors")
+      if (script) script.remove()
+      const widget = document.getElementById("mapmyvisitors-widget")
+      if (widget) widget.remove()
     }
-  }, [containerWidth])
+  }, [containerWidth, isDark])
 
   return (
     <div className="mt-24">
@@ -88,18 +77,10 @@ export function MapMyVisitors() {
 
       {/* Map Widget Container */}
       <div className="max-w-4xl mx-auto">
-        <div className="relative min-h-[450px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-4 overflow-hidden">
-          {/* Light theme map */}
-          <div
-            ref={lightContainerRef}
-            className={`flex justify-center items-center w-full ${isDark ? "hidden" : ""}`}
-          />
-          {/* Dark theme map */}
-          <div
-            ref={darkContainerRef}
-            className={`flex justify-center items-center w-full ${isDark ? "" : "hidden"}`}
-          />
-        </div>
+        <div
+          ref={containerRef}
+          className="flex justify-center items-center min-h-[450px] rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f0f0f] p-4 overflow-hidden"
+        />
       </div>
     </div>
   )
