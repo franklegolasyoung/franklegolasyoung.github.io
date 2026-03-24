@@ -55,7 +55,7 @@ export function MapMyVisitors() {
     const script = document.createElement("script")
     script.type = "text/javascript"
     script.id = "mapmyvisitors"
-    script.src = `https://mapmyvisitors.com/map.js?cl=5000CA&w=${containerWidth}&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=${co}&cmo=00f3ff&cmn=ff1e1e&ct=808080`
+    script.src = `https://mapmyvisitors.com/map.js?cl=16A8D9&w=${containerWidth}&t=n&d=7I1ySOZzz6_tws4Fp2G7ErX6SwjarouXvh-HoqgzBlU&co=${co}&cmo=80CED7&cmn=ff1e1e&ct=808080`
 
     containerRef.current.appendChild(script)
 

@@ -18,7 +18,7 @@ export function Projects() {
             href={PERSONAL_INFO.socials.find(s => s.name === "GitHub")?.url}
             target="_blank"
             rel="noreferrer"
-            className="hidden md:flex items-center gap-2 text-[#5000CA] font-medium hover:underline"
+            className="hidden md:flex items-center gap-2 text-[#16A8D9] font-medium hover:underline"
           >
             View All <ArrowUpRight className="w-4 h-4" />
           </a>
@@ -61,7 +61,7 @@ export function Projects() {
             href={PERSONAL_INFO.socials.find(s => s.name === "GitHub")?.url}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-[#5000CA] font-medium hover:underline"
+            className="inline-flex items-center gap-2 text-[#16A8D9] font-medium hover:underline"
           >
             View All <ArrowUpRight className="w-4 h-4" />
           </a>

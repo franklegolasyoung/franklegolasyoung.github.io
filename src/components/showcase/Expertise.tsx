@@ -25,9 +25,9 @@ export function Expertise() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full hover:border-[#5000CA]/50 transition-colors group">
+                <Card className="h-full hover:border-[#16A8D9]/50 transition-colors group">
                   <CardContent className="p-8">
-                    <div className="mb-6 p-4 rounded-xl bg-[#5000CA]/5 text-[#5000CA] w-fit group-hover:bg-[#5000CA] group-hover:text-white transition-colors duration-300">
+                    <div className="mb-6 p-4 rounded-xl bg-[#16A8D9]/5 text-[#16A8D9] w-fit group-hover:bg-[#16A8D9] group-hover:text-white transition-colors duration-300">
                       <Icon className="w-8 h-8" />
                     </div>
                     <h3 className="text-xl font-bold mb-3">{item.title}</h3>

@@ -12,7 +12,7 @@ export function About() {
           <a
             key={i}
             href={`mailto:${part}`}
-            className="text-[#5000CA] hover:text-[#00CACC] transition-colors underline decoration-[#5000CA]/30 hover:decoration-[#00CACC]"
+            className="text-[#16A8D9] hover:text-[#80CED7] transition-colors underline decoration-[#16A8D9]/30 hover:decoration-[#80CED7]"
           >
             {part}
           </a>
@@ -34,7 +34,7 @@ export function About() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#5000CA] to-[#00CACC] mx-auto rounded-full" />
+            <div className="w-20 h-1 bg-gradient-to-r from-[#16A8D9] to-[#80CED7] mx-auto rounded-full" />
           </motion.div>
 
           <div className="space-y-6">

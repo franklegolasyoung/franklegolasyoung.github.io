@@ -20,7 +20,7 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
       <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-black/80 backdrop-blur-md">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-[#5000CA] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#5000CA]/20">
+            <div className="h-8 w-8 rounded-lg bg-[#16A8D9] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#16A8D9]/20">
               {PERSONAL_INFO.initials}
             </div>
             <span className="font-bold text-xl tracking-tight hidden sm:inline-block">{PERSONAL_INFO.name}</span>
@@ -45,7 +45,7 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
                  whileTap={{ scale: 0.95 }}
                  className={cn(
                    "relative z-10 flex items-center justify-center gap-2 px-6 py-1.5 text-sm font-medium transition-colors duration-200 rounded-full flex-1",
-                   currentView === "showcase" ? "text-[#5000CA] dark:text-[#8040FF]" : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
+                   currentView === "showcase" ? "text-[#16A8D9] dark:text-[#80CED7]" : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
                  )}
                >
                  <LayoutTemplate className="w-4 h-4 shrink-0" />
@@ -57,7 +57,7 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
                  whileTap={{ scale: 0.95 }}
                  className={cn(
                    "relative z-10 flex items-center justify-center gap-2 px-6 py-1.5 text-sm font-medium transition-colors duration-200 rounded-full flex-1",
-                   currentView === "cv" ? "text-[#5000CA] dark:text-[#8040FF]" : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
+                   currentView === "cv" ? "text-[#16A8D9] dark:text-[#80CED7]" : "text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
                  )}
                >
                  <Briefcase className="w-4 h-4 shrink-0" />

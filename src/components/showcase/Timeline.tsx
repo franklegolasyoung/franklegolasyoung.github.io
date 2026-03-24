@@ -29,7 +29,7 @@ export function Timeline() {
           {/* Animated Line Progress - Solid */}
           <motion.div 
             style={{ height }}
-            className="absolute left-4 md:left-1/2 top-0 w-[3px] bg-[#5000CA] -translate-x-1/2 origin-top z-10 shadow-[0_0_10px_rgba(80,0,202,0.5)]" 
+            className="absolute left-4 md:left-1/2 top-0 w-[3px] bg-[#16A8D9] -translate-x-1/2 origin-top z-10 shadow-[0_0_10px_rgba(22,168,217,0.5)]" 
           />
 
           <div className="space-y-16">
@@ -56,7 +56,7 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
       className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center`}
     >
       {/* Connector Dot */}
-      <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-white dark:border-[#0a0a0a] bg-[#5000CA] z-20 shadow-lg" />
+      <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-white dark:border-[#0a0a0a] bg-[#16A8D9] z-20 shadow-lg" />
       
       {/* Connector Line to Next Item (Visual Only) - Hidden on mobile, visible on desktop */}
       {!isEven && (
@@ -66,16 +66,16 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
       {/* Content Side (Year) */}
       <div className={`pl-12 md:pl-0 ${isEven ? "md:text-right" : "md:text-left md:order-last"}`}>
          <div className="hidden md:block">
-            <h3 className="text-2xl font-bold text-[#5000CA] dark:text-[#8040FF]">{item.year}</h3>
+            <h3 className="text-2xl font-bold text-[#16A8D9] dark:text-[#80CED7]">{item.year}</h3>
          </div>
       </div>
 
       {/* Detail Side (Card) */}
       <div className={`pl-12 md:pl-0 ${isEven ? "md:text-left" : "md:text-right"}`}>
          <div className={`p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow ${!isEven && "md:text-left"}`}>
-             <span className="md:hidden text-[#5000CA] font-bold text-sm mb-2 block">{item.year}</span>
+             <span className="md:hidden text-[#16A8D9] font-bold text-sm mb-2 block">{item.year}</span>
              <h4 className="text-lg font-bold">{item.title}</h4>
-             <p className="text-[#00CACC] font-medium text-sm mb-3 flex items-center gap-2">
+             <p className="text-[#80CED7] font-medium text-sm mb-3 flex items-center gap-2">
                <BriefcaseIcon className="w-3 h-3" /> {item.company}
              </p>
              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">

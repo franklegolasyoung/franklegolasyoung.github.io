@@ -131,7 +131,7 @@ export function Contact() {
             <div className="space-y-6">
               {contact.channels.map((channel) => (
                 <div key={channel.label} className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#5000CA]/10 flex items-center justify-center text-[#5000CA]">
+                  <div className="w-12 h-12 rounded-full bg-[#16A8D9]/10 flex items-center justify-center text-[#16A8D9]">
                     {renderIcon(channel.type)}
                   </div>
                   <div>
@@ -139,7 +139,7 @@ export function Contact() {
                     {channel.href ? (
                       <a
                         href={channel.href}
-                        className="text-gray-600 dark:text-gray-400 hover:text-[#5000CA] transition-colors"
+                        className="text-gray-600 dark:text-gray-400 hover:text-[#16A8D9] transition-colors"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -213,7 +213,7 @@ export function Contact() {
                     <ReCAPTCHA sitekey="6Ldc4SAsAAAAAKoAw7iOehR3ZKFwQRAIh03fkEcC" onChange={handleRecaptcha} ref={recaptchaRef} />
                   </div>
                   <Button
-                    className="gap-2 shadow-lg shadow-[#5000CA]/25 bg-[#5000CA] hover:bg-[#3f009a] text-white px-6 self-start"
+                    className="gap-2 shadow-lg shadow-[#16A8D9]/25 bg-[#16A8D9] hover:bg-[#003249] text-white px-6 self-start"
                     disabled={isSending}
                   >
                     {isSending ? "Sending..." : "Send Message"} <Send className="w-4 h-4" />

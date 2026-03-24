@@ -17,12 +17,12 @@ export function CVHeader() {
 
           <div className="flex-1 text-center md:text-left pt-4 md:pt-2">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">{PERSONAL_INFO.name}</h1>
-            <p className="text-xl text-[#5000CA] dark:text-[#8040FF] font-medium mb-4">{PERSONAL_INFO.role}</p>
+            <p className="text-xl text-[#16A8D9] dark:text-[#80CED7] font-medium mb-4">{PERSONAL_INFO.role}</p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600 dark:text-gray-400 mt-6">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href={`mailto:${PERSONAL_INFO.email}`} className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
+                <a href={`mailto:${PERSONAL_INFO.email}`} className="hover:text-[#16A8D9] dark:hover:text-[#80CED7] transition-colors">
                   {PERSONAL_INFO.email}
                 </a>
               </div>
@@ -35,7 +35,7 @@ export function CVHeader() {
                 return (
                   <div key={social.name} className="flex items-center gap-2">
                     <Icon className="w-4 h-4" />
-                    <a href={social.url} target="_blank" rel="noreferrer" className="hover:text-[#5000CA] dark:hover:text-[#00CACC] transition-colors">
+                    <a href={social.url} target="_blank" rel="noreferrer" className="hover:text-[#16A8D9] dark:hover:text-[#80CED7] transition-colors">
                       {social.name}
                     </a>
                   </div>
@@ -45,7 +45,7 @@ export function CVHeader() {
           </div>
 
           <div className="pb-4 pt-4 md:pt-2">
-             <Button className="gap-2 shadow-lg shadow-[#5000CA]/25 bg-[#5000CA] hover:bg-[#3f009a] text-white">
+             <Button className="gap-2 shadow-lg shadow-[#16A8D9]/25 bg-[#16A8D9] hover:bg-[#003249] text-white">
                <Download className="w-4 h-4" /> Download CV
              </Button>
           </div>

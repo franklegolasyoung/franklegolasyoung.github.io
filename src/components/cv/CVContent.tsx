@@ -11,7 +11,7 @@ export function CVContent() {
         <div className="lg:col-span-2 space-y-12">
           
           <section>
-            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#5000CA] pb-2 mb-6">
+            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#16A8D9] pb-2 mb-6">
               Professional Summary
             </h2>
             <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed text-[0.95em]">
@@ -20,7 +20,7 @@ export function CVContent() {
           </section>
 
           <section>
-              <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#5000CA] pb-2 mb-6">
+              <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#16A8D9] pb-2 mb-6">
                 Education
               </h2>
               <div className="space-y-6">
@@ -28,7 +28,7 @@ export function CVContent() {
                   <div key={index} className="flex flex-col sm:flex-row justify-between sm:items-baseline">
                     <div>
                        <h3 className="text-lg font-bold text-gray-900 dark:text-white">{edu.degree}</h3>
-                       <p className="text-[#5000CA] font-medium">{edu.school}</p>
+                       <p className="text-[#16A8D9] font-medium">{edu.school}</p>
                        <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
                          {edu.description}
                        </p>
@@ -40,7 +40,7 @@ export function CVContent() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#5000CA] pb-2 mb-6">
+            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#16A8D9] pb-2 mb-6">
               Experience
             </h2>
             <div className="space-y-8">
@@ -58,7 +58,7 @@ export function CVContent() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#5000CA] pb-2 mb-6">
+            <h2 className="text-xl font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#16A8D9] pb-2 mb-6">
               Awards & Certificates
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -79,7 +79,7 @@ export function CVContent() {
         <div className="space-y-12">
           
           <section>
-            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#00CACC] pb-2 mb-6">
+            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#80CED7] pb-2 mb-6">
               Skills
             </h2>
             <div className="space-y-4">
@@ -90,7 +90,7 @@ export function CVContent() {
           </section>
 
           <section>
-            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#00CACC] pb-2 mb-6">
+            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#80CED7] pb-2 mb-6">
               Languages
             </h2>
              <ul className="space-y-2">
@@ -104,7 +104,7 @@ export function CVContent() {
           </section>
 
            <section>
-            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#00CACC] pb-2 mb-6">
+            <h2 className="text-lg font-bold uppercase tracking-wider text-gray-900 dark:text-white border-b-2 border-[#80CED7] pb-2 mb-6">
               Interests
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -122,12 +122,12 @@ export function CVContent() {
 function JobItem({ role, company, period, location, details }: any) {
   return (
     <div className="relative border-l-2 border-gray-200 dark:border-gray-800 pl-6 pb-2">
-      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#5000CA] border-4 border-white dark:border-[#0a0a0a]" />
+      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#16A8D9] border-4 border-white dark:border-[#0a0a0a]" />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
         <h3 className="text-lg font-bold text-gray-900 dark:text-white">{role}</h3>
         <span className="text-sm font-medium text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">{period}</span>
       </div>
-      <div className="flex items-center gap-2 text-[#5000CA] font-medium mb-3">
+      <div className="flex items-center gap-2 text-[#16A8D9] font-medium mb-3">
         <span>{company}</span>
         <span className="text-gray-300">•</span>
         <span className="text-gray-500 text-sm font-normal">{location}</span>
@@ -154,7 +154,7 @@ function SkillBar({ name, percentage }: { name: string, percentage: number }) {
           whileInView={{ width: `${percentage}%` }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="h-full bg-[#00CACC]" 
+          className="h-full bg-[#80CED7]" 
         />
       </div>
     </div>
@@ -163,9 +163,9 @@ function SkillBar({ name, percentage }: { name: string, percentage: number }) {
 
 function AwardCard({ title, issuer, date }: { title: string, issuer: string, date: string }) {
   return (
-    <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 flex flex-col gap-2 hover:border-[#5000CA] transition-colors">
+    <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 flex flex-col gap-2 hover:border-[#16A8D9] transition-colors">
        <div className="flex items-start justify-between">
-         <div className="w-8 h-8 rounded-full bg-[#5000CA]/10 flex items-center justify-center text-[#5000CA]">
+         <div className="w-8 h-8 rounded-full bg-[#16A8D9]/10 flex items-center justify-center text-[#16A8D9]">
            <Trophy className="w-4 h-4" />
          </div>
          <span className="text-xs text-gray-400">{date}</span>
